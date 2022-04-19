@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #211337;
+    --accent-color: #44CEAD;
+    --white: #fff;
+    
+    --transition1: 300ms all ease-in-out;
+    }
+
+/* STARS */
+.star {
+    position: absolute;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    
+}
+.star1 {
+    top: 400px;
+    left: 100px; 
+}
+.star2 {
+    top: 150px;
+    left:80px;
+}
+.star3 {
+    left: 400px;
+    top: 90px;
+}
+.star4 {
+    left: 500px;
+    top: 300px;
+}
+.star5 {
+    left: 750px;
+    top: 80px;
+}
+.star6 {
+    left: 950px;
+    top: 230px;
+}
+.star7 {
+    left: 1150px;
+    top: 100px;
+}
+.star8 {
+    left: 1290px;
+    top: 280px;
+}
+.star9 {
+    left: 1450px;
+    top: 130px;
+}
+.star10 {
+    left: -100px;
+    top: 500px;
+}
+.star11 {
+    left: 150px;
+    top: 820px;
+}
+.star12 {
+    left: 900px;
+    top: 530px;
+}
+.star13 {
+    left: 720px;
+    top: 750px;
+}
+.star14 {
+    left: 1750px;
+    top: 300px;
+}
+.star15 {
+    left: 1600px;
+    top: 700px;
+}
+.star16 {
+    left: -50px;
+    top: 900px;
+}
+.star17 {
+    left: 350px;
+    top: 940px;
+}
+.star18 {
+    left: 1750px;
+    top: 1000px;
+}
+.star19 {
+    left: 1020px;
+    top: 930px;
+}
+.star20 {
+    left: 1380px;
+    top: 910px;
+}
+
+.l {
+    height: 25px;
+    width: 25px;
+    opacity: .4;
+}
+.m {
+    height: 15px;
+    width: 15px;
+    opacity: .3;
+}
+.s {
+    height: 8px;
+    width: 8px;
+    opacity: .25;
+}
+
+.spark {
+    -webkit-box-shadow: 10px 17px 70px 37px rgba(255, 207, 124, 1);
+    -moz-box-shadow: 10px 17px 70px 37px rgba(255, 207, 124, 1);
+    box-shadow: 0px 0px 50px 15px var(--accent-color);
+    transition: 1500ms all ease-in-out;
+    transform: scale(1.2);
+    
+}
+.no-spark {
+    box-shadow: none;
+    transition: 2000ms all ease-in-out;
+    opacity: .1;
+}
+
+.spark-moon {
+    -webkit-box-shadow: 10px 17px 70px 37px rgba(255, 207, 124, 1);
+    -moz-box-shadow: 10px 17px 70px 37px rgba(255, 207, 124, 1);
+    box-shadow: -5px -3px 50px 1px #44ceae92;
+
+    transition: 2500ms all ease-in-out;
+    opacity: 1;
+}
+
+.no-spark-moon {
+    box-shadow: none;
+    transition: 3000ms all ease-in-out;
+    opacity: .7;
+}
