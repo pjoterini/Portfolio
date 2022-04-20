@@ -11,9 +11,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/Website/variables.css" />
-    <link rel="stylesheet" href="/Website/index.css" />
-    <link rel="stylesheet" href="/Website/background.css" />
+    <link rel="stylesheet" href="/Website/css/variables.css" />
+    <link rel="stylesheet" href="/Website/css/index.css" />
+    <link rel="stylesheet" href="/Website/css/background.css" />
     <script defer src="/Website/stars.js"></script>
     <title>PiotrGórski_portfolio</title>
   </head>
@@ -50,10 +50,10 @@
         </div>
         <div class="nav-links">
           <ul>
-            <a href="#"><li>Projects</li></a>
-            <a href="#"><li>Arch_p-folio</li></a>
-            <a href="#"><li>AboutMe</li></a>
-            <a href="#"><li>Contact</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#arch-portfolio"><li>Arch_p-folio</li></a>
+            <a href="#about-me"><li>AboutMe</li></a>
+            <a href="#contact"><li>Contact</li></a>
           </ul>
         </div>
       </div>
@@ -97,7 +97,7 @@
 
       <!-- PROJECTS -->
 
-      <div class="projects">
+      <section id="projects">
         <h2 class="h2">Projects</h2>
         <!-- PROJECT 1 -->
         <div class="project project1">
@@ -156,11 +156,11 @@
           </div>
           <div class="project-img"></div>
         </div>
-      </div>
+      </section>
 
       <!-- ARCH PFOLIO -->
 
-      <div class="arch-portfolio">
+      <section id="arch-portfolio">
         <div class="condition">
           <h4 class="h4 if">if</h4>
           <h4 class="h4">
@@ -175,25 +175,29 @@
           <h2 class="h2">Architecture Portfolio</h2>
           <h4 class="h4"><strong class="accent">}</strong></h4>
         </div>
-
-        <div class="arch-images">
-          <div class="arch-img arch-img1"></div>
-          <div class="arch-img arch-img2"></div>
-          <div class="arch-img arch-img3"></div>
-          <div class="arch-img arch-img4"></div>
-          <div class="arch-img arch-img5"></div>
-          <div class="arch-img arch-img6"></div>
-          <div class="arch-img arch-img7"></div>
-          <div class="arch-img arch-img8"></div>
-        </div>
-        <div class="check-pdf">
-          <h3 class="h3">OPEN PDF</h3>
-        </div>
-      </div>
+        <a
+          href="https://ab1f6751-e0c0-443e-be77-f5b37a2dff53.filesusr.com/ugd/9f91a8_add6355469dc4513a6bc2708824731cf.pdf"
+          target="_blank"
+        >
+          <div class="arch-images">
+            <div class="arch-img arch-img1"></div>
+            <div class="arch-img arch-img2"></div>
+            <div class="arch-img arch-img3"></div>
+            <div class="arch-img arch-img4"></div>
+            <div class="arch-img arch-img5"></div>
+            <div class="arch-img arch-img6"></div>
+            <div class="arch-img arch-img7"></div>
+            <div class="arch-img arch-img8"></div>
+          </div>
+          <div class="check-pdf">
+            <h3 class="h3">OPEN PDF</h3>
+          </div></a
+        >
+      </section>
 
       <!-- ABOUT ME -->
 
-      <div class="about-me">
+      <section id="about-me">
         <div class="about-me-content">
           <div class="left-col">
             <h2 class="h2">About Me</h2>
@@ -211,17 +215,19 @@
 
           <div class="my-picture"></div>
         </div>
-      </div>
+      </section>
 
       <!-- CONTACT -->
 
-      <div class="contact">
+      <section id="contact">
         <h2 class="h2">Contact</h2>
         <form
+          id="form"
           class="form"
           action="https://formsubmit.co/piotrekjan.gorski@gmail.com"
           method="POST"
         >
+          <input type="hidden" name="_subject" value="Portfolio Visited" />
           <div class="inputs email">
             <label for="email">Email</label>
             <input
@@ -231,39 +237,42 @@
               placeholder="youremail@mail.com"
               required
             />
-            <i class="fa-solid fa-circle-check"></i>
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <small>Error message</small>
           </div>
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/Website/pages/thankyou.html"
+          />
           <div class="inputs message">
             <label for="text">Message</label>
             <input
               id="message"
               type="text"
               name="name"
-              placeholder="..."
+              placeholder="Write Your message here"
               required
             />
-            <i class="fa-solid fa-circle-check"></i>
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <small>Error message</small>
           </div>
-
           <button class="btn form-btn" type="submit">Send</button>
         </form>
-      </div>
+      </section>
 
       <!-- FOOTER -->
 
-      <div class="footer">
+      <section id="footer">
         <div class="footer-items">
-          <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/pjoterini" target="_blank"
+            ><i class="fa-brands fa-github fa-2x"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/piotr-g%C3%B3rski-b62105226/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2x"></i
+          ></a>
           <p>&copy; 2022</p>
           <p class="p2">Piotr Górski</p>
         </div>
-      </div>
+      </section>
     </div>
   </body>
 </html>
-s

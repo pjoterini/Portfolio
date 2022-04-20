@@ -1,3 +1,5 @@
+// NAVBAR SMOOTH SCROLL
+
 // STARS
 
 let star = document.querySelector(".star1");
@@ -188,3 +190,6 @@ archImages.addEventListener("mouseenter", (e) => {
     });
   }, 1000 / 250);
 });
+
+// FORM
+
