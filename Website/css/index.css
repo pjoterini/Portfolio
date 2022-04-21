@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     width: 80%;
     margin: 0 auto;
  
@@ -394,7 +394,7 @@ body {
 .arch-images {
     position: absolute;
     top: 350px;
-    left: -315px;
+    left: -415px;
     margin: 10rem 0;
    
     display: flex;
@@ -533,7 +533,7 @@ body {
 
 .form {
     margin-top: 4rem;
-    width: 50%;
+    width: 60%;
 }
 
 .inputs {

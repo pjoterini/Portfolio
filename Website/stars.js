@@ -171,9 +171,9 @@ function arrowMove() {
 
 let archImages = document.querySelector(".arch-images");
 
-let maxRight = -300;
+let maxRight = -415;
 let speedX = 0.4;
-let positionX = -315;
+let positionX = -415;
 
 archImages.addEventListener("mouseenter", (e) => {
   let pdfBtn = document.querySelector(".check-pdf");
@@ -181,7 +181,7 @@ archImages.addEventListener("mouseenter", (e) => {
 
   const myInterval = setInterval(() => {
     positionX = positionX + speedX;
-    if (positionX > maxRight || positionX < -2370) {
+    if (positionX > maxRight || positionX < -2480) {
       speedX = speedX * -1;
     }
     archImages.style.left = positionX + "px";
