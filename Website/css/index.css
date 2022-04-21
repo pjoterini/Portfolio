@@ -628,13 +628,10 @@ input, select, textarea  {
     color: var(--white);
 }
 
-/* NAVBAR SMOOTH SCROOL */
 
 
 
 
-
-/* 
 @media(max-width: 1780px) {
     .stars {
         transform: scale(0.75, 0.9);
@@ -662,4 +659,4 @@ input, select, textarea  {
     .logo-img {
         display: none;
     }
-} */
+}
