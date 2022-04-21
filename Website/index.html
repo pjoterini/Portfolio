@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="/Website/css/variables.css" />
     <link rel="stylesheet" href="/Website/css/index.css" />
     <link rel="stylesheet" href="/Website/css/background.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"
+    ></script>
     <script defer src="/Website/stars.js"></script>
     <title>PiotrGórski_portfolio</title>
   </head>
@@ -42,11 +46,19 @@
     </div>
 
     <div class="container">
+      <!-- MAIN-NAV -->
+
       <div class="main-nav">
         <div class="logo">
-          <a href="#"
+          <a href="index.html"
             ><img class="logo-img" src="/images/LOGO_white.png" alt="logo"
           /></a>
+        </div>
+        <div class="color-mode">
+          <ul>
+            <li class="moon-icon active"><i class="fa-solid fa-moon"></i></li>
+            <li class="sun-icon"><i class="fa-solid fa-sun"></i></li>
+          </ul>
         </div>
         <div class="nav-links">
           <ul>
@@ -58,6 +70,8 @@
         </div>
       </div>
 
+      <!-- MAIN-CONTENT -->
+
       <main class="main">
         <div class="main-left">
           <h1 class="h1">Hi, i'm Piotr</h1>
@@ -65,7 +79,7 @@
             <h3 class="h3">Frontend development</h3>
             <h3 class="h3">UI / UX / graphic design</h3>
           </div>
-          <a href="#" class="btn contact-btn">Get in touch</a>
+          <a href="#contact" class="btn contact-btn">Get in touch</a>
         </div>
         <div class="main-right">
           <div class="moon no-spark-moon">
@@ -191,8 +205,8 @@
           </div>
           <div class="check-pdf">
             <h3 class="h3">OPEN PDF</h3>
-          </div></a
-        >
+          </div>
+        </a>
       </section>
 
       <!-- ABOUT ME -->
@@ -245,13 +259,14 @@
           />
           <div class="inputs message">
             <label for="text">Message</label>
-            <input
+            <textarea
+              name="message"
               id="message"
-              type="text"
-              name="name"
+              cols="30"
+              rows="10"
               placeholder="Write Your message here"
               required
-            />
+            ></textarea>
           </div>
           <button class="btn form-btn" type="submit">Send</button>
         </form>

@@ -1,5 +1,7 @@
 // NAVBAR SMOOTH SCROLL
 
+const scroll = new SmoothScroll('ul a[href*="#"]');
+
 // STARS
 
 let star = document.querySelector(".star1");
@@ -191,5 +193,28 @@ archImages.addEventListener("mouseenter", (e) => {
   }, 1000 / 250);
 });
 
-// FORM
+// LIGHT / DARK MODE
 
+const moonIcon = document.querySelector('.moon-icon')
+const sunIcon = document.querySelector('.sun-icon')
+const logoImg = document.querySelector('.logo-img')
+
+let link = document.createElement('link')
+link.rel = 'stylesheet'
+link.href = 'css/light-mode.css'
+
+console.log(link)
+
+moonIcon.addEventListener('click', () => {
+  moonIcon.classList.add('active')
+  sunIcon.classList.remove('active')
+  document.head.removeChild(link)
+  logoImg.classList.remove('logo-img-light')
+})
+
+sunIcon.addEventListener('click', () => {
+  moonIcon.classList.remove('active')
+  sunIcon.classList.add('active')
+  document.head.appendChild(link)
+  logoImg.classList.add('logo-img-light')
+})
