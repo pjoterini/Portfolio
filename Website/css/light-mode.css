@@ -1,9 +1,24 @@
 :root {
---primary-color: #ffffff;
+--primary-color: #ededed;
 --secondary-color: #44CEAD;
 --accent-color: #FFD698;
 --white: #211337;
 --black: rgb(255, 255, 255);
 
 --transition1: 300ms all ease-in-out;
+}
+
+.spark-moon {
+    -webkit-box-shadow: 10px 17px 70px 37px rgba(255, 207, 124, 1);
+    -moz-box-shadow: 10px 17px 70px 37px rgba(255, 207, 124, 1);
+    box-shadow: -5px -3px 100px 50px #44ceae92;
+
+    transition: 2500ms all ease-in-out;
+    opacity: .2;
+}
+
+.no-spark-moon {
+    box-shadow: none;
+    transition: 3000ms all ease-in-out;
+    opacity: .3;
 }

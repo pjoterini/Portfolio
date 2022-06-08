@@ -1,7 +1,3 @@
-// NAVBAR SMOOTH SCROLL
-
-const scroll = new SmoothScroll('ul a[href*="#"]');
-
 // STARS
 
 let star = document.querySelector(".star1");
@@ -26,123 +22,122 @@ let star19 = document.querySelector(".star19");
 let star20 = document.querySelector(".star20");
 let moon = document.querySelector(".moon");
 
-setInterval(spark, 3000);
 
+setInterval(spark, 3000);
 function spark() {
   star.classList.toggle("spark");
   star.classList.toggle("no-spark");
 }
 
 setInterval(spark2, 4000);
-
 function spark2() {
   star2.classList.toggle("spark");
   star2.classList.toggle("no-spark");
 }
-setInterval(spark3, 3500);
 
+setInterval(spark3, 3500);
 function spark3() {
   star3.classList.toggle("spark");
   star3.classList.toggle("no-spark");
 }
-setInterval(spark4, 3800);
 
+setInterval(spark4, 3800);
 function spark4() {
   star4.classList.toggle("spark");
   star4.classList.toggle("no-spark");
 }
-setInterval(spark5, 3200);
 
+setInterval(spark5, 3200);
 function spark5() {
   star5.classList.toggle("spark");
   star5.classList.toggle("no-spark");
 }
-setInterval(spark6, 4100);
 
+setInterval(spark6, 4100);
 function spark6() {
   star6.classList.toggle("spark");
   star6.classList.toggle("no-spark");
 }
-setInterval(spark7, 2800);
 
+setInterval(spark7, 2800);
 function spark7() {
   star7.classList.toggle("spark");
   star7.classList.toggle("no-spark");
 }
-setInterval(spark8, 3300);
 
+setInterval(spark8, 3300);
 function spark8() {
   star8.classList.toggle("spark");
   star8.classList.toggle("no-spark");
 }
-setInterval(spark9, 3400);
 
+setInterval(spark9, 3400);
 function spark9() {
   star9.classList.toggle("spark");
   star9.classList.toggle("no-spark");
 }
-setInterval(spark10, 3600);
 
+setInterval(spark10, 3600);
 function spark10() {
   star10.classList.toggle("spark");
   star10.classList.toggle("no-spark");
 }
-setInterval(spark11, 4100);
 
+setInterval(spark11, 4100);
 function spark11() {
   star11.classList.toggle("spark");
   star11.classList.toggle("no-spark");
 }
-setInterval(spark12, 2900);
 
+setInterval(spark12, 2900);
 function spark12() {
   star12.classList.toggle("spark");
   star12.classList.toggle("no-spark");
 }
-setInterval(spark13, 3700);
 
+setInterval(spark13, 3700);
 function spark13() {
   star13.classList.toggle("spark");
   star13.classList.toggle("no-spark");
 }
-setInterval(spark14, 3800);
 
+setInterval(spark14, 3800);
 function spark14() {
   star14.classList.toggle("spark");
   star14.classList.toggle("no-spark");
 }
-setInterval(spark15, 3900);
 
+setInterval(spark15, 3900);
 function spark15() {
   star15.classList.toggle("spark");
   star15.classList.toggle("no-spark");
 }
-setInterval(spark16, 3300);
 
+setInterval(spark16, 3300);
 function spark16() {
   star16.classList.toggle("spark");
   star16.classList.toggle("no-spark");
 }
-setInterval(spark17, 3350);
 
+setInterval(spark17, 3350);
 function spark17() {
   star17.classList.toggle("spark");
   star17.classList.toggle("no-spark");
 }
-setInterval(spark18, 4300);
 
+setInterval(spark18, 4300);
 function spark18() {
   star18.classList.toggle("spark");
   star18.classList.toggle("no-spark");
 }
-setInterval(spark19, 3440);
 
+setInterval(spark19, 3440);
 function spark19() {
   star19.classList.toggle("spark");
   star19.classList.toggle("no-spark");
 }
-setInterval(spark20, 3550);
 
+setInterval(spark20, 3550);
 function spark20() {
   star20.classList.toggle("spark");
   star20.classList.toggle("no-spark");
@@ -195,26 +190,26 @@ archImages.addEventListener("mouseenter", (e) => {
 
 // LIGHT / DARK MODE
 
-const moonIcon = document.querySelector('.moon-icon')
-const sunIcon = document.querySelector('.sun-icon')
-const logoImg = document.querySelector('.logo-img')
+const moonIcon = document.querySelector(".moon-icon");
+const sunIcon = document.querySelector(".sun-icon");
+const logoImg = document.querySelector(".logo-img");
 
-let link = document.createElement('link')
-link.rel = 'stylesheet'
-link.href = 'css/light-mode.css'
+let link = document.createElement("link");
+link.rel = "stylesheet";
+link.href = "css/light-mode.css";
 
-console.log(link)
+console.log("🚀 ~ file: script.js ~ line 198 ~ link", link)
 
-moonIcon.addEventListener('click', () => {
-  moonIcon.classList.add('active')
-  sunIcon.classList.remove('active')
-  document.head.removeChild(link)
-  logoImg.classList.remove('logo-img-light')
-})
+moonIcon.addEventListener("click", () => {
+  moonIcon.classList.add("active");
+  sunIcon.classList.remove("active");
+  document.head.removeChild(link);
+  logoImg.classList.remove("logo-img-light");
+});
 
-sunIcon.addEventListener('click', () => {
-  moonIcon.classList.remove('active')
-  sunIcon.classList.add('active')
-  document.head.appendChild(link)
-  logoImg.classList.add('logo-img-light')
-})
+sunIcon.addEventListener("click", () => {
+  moonIcon.classList.remove("active");
+  sunIcon.classList.add("active");
+  document.head.appendChild(link);
+  logoImg.classList.add("logo-img-light");
+});
