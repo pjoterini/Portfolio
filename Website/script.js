@@ -143,6 +143,23 @@ function spark20() {
   star20.classList.toggle("no-spark");
 }
 
+// NAVBAR
+
+let burgerBtnOpen = document.querySelector('.burger-btn-open')
+let burgerBtnClose = document.querySelector('.burger-btn-close')
+let navLinksUl = document.querySelector('.nav-links-ul')
+
+
+burgerBtnOpen.addEventListener('click', () => {
+  burgerBtnOpen.classList.add('display-none')
+  burgerBtnClose.classList.remove('display-none')
+  navLinksUl.classList.remove('display-none')
+})
+burgerBtnClose.addEventListener('click', () => {
+  burgerBtnClose.classList.add('display-none')
+  burgerBtnOpen.classList.remove('display-none')
+  navLinksUl.classList.add('display-none')
+})
 //  MOON
 
 setInterval(spark21, 5550);
@@ -169,6 +186,24 @@ let archImages = document.querySelector(".arch-images");
 let maxRight = -415;
 let speedX = 0.4;
 let positionX = -415;
+
+if (window.screen.width < 1024) {
+  let pdfBtn = document.querySelector(".check-pdf");
+  pdfBtn.classList.add("check-pdf-hover");
+
+  const myInterval = setInterval(() => {
+    positionX = positionX + speedX;
+    if (positionX > maxRight || positionX < -2480) {
+      speedX = speedX * -1;
+    }
+    archImages.style.left = positionX + "px";
+
+    archImages.addEventListener("mouseleave", (e) => {
+      clearInterval(myInterval);
+      pdfBtn.classList.remove("check-pdf-hover");
+    });
+  }, 1000 / 250);
+}
 
 archImages.addEventListener("mouseenter", (e) => {
   let pdfBtn = document.querySelector(".check-pdf");
@@ -197,8 +232,6 @@ const logoImg = document.querySelector(".logo-img");
 let link = document.createElement("link");
 link.rel = "stylesheet";
 link.href = "css/light-mode.css";
-
-console.log("🚀 ~ file: script.js ~ line 198 ~ link", link)
 
 moonIcon.addEventListener("click", () => {
   moonIcon.classList.add("active");

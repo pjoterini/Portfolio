@@ -47,22 +47,39 @@
       <!-- MAIN-NAV -->
 
       <div class="main-nav">
-        <div class="logo">
-          <a href="index.html"><div class="logo-img"></div></a>
+        <div class="logo-and-mode">
+          <div class="logo">
+            <a href="index.html"><div class="logo-img"></div></a>
+          </div>
+          <div class="color-mode">
+            <ul class="color-mode-ul">
+              <li class="moon-icon active"><i class="fa-solid fa-moon"></i></li>
+              <li class="sun-icon"><i class="fa-solid fa-sun"></i></li>
+            </ul>
+          </div>
+
         </div>
-        <div class="color-mode">
-          <ul>
-            <li class="moon-icon active"><i class="fa-solid fa-moon"></i></li>
-            <li class="sun-icon"><i class="fa-solid fa-sun"></i></li>
-          </ul>
-        </div>
+       
         <div class="nav-links">
-          <ul>
-            <a href="#projects"><li>Projects</li></a>
-            <a href="#arch-portfolio"><li>Arch_p-folio</li></a>
-            <a href="#about-me"><li>AboutMe</li></a>
-            <a href="#contact"><li>Contact</li></a>
-          </ul>
+          <div class="burger-menu">
+            <div class="burger-btns">
+              <div class="burger-btn-open">
+                INFO <i class="fa-solid fa-bars"></i>
+              </div>
+              <div class="burger-btn-close display-none">
+                <i class="fa-solid fa-x"></i>
+              </div>
+            </div>
+            
+            <ul class="nav-links-ul display-none">
+              <a href="#projects"><li>Projects</li></a>
+              <a href="#arch-portfolio"><li>Arch_p-folio</li></a>
+              <a href="#"><li>CV</li></a>
+              <a href="#about-me"><li>AboutMe</li></a>
+              <a href="#contact"><li>Contact</li></a>
+            </ul>
+          </div>
+          
         </div>
       </div>
 
@@ -71,10 +88,11 @@
       <main class="main">
         <div class="main-left">
           <h1 class="h1">Hi, i'm Piotr</h1>
-          <div class="main-text">
-            <h3 class="h3">Frontend development</h3>
-            <h3 class="h3">UI / UX / graphic design</h3>
-          </div>
+          <main class="main-text">
+            <p class="main-text-1">Frontend development</p>
+            <p class="main-text-2">Backend development</p>
+            <p class="main-text-2">UI / UX / graphic design</p>
+          </main>
           <a href="#contact" class="btn contact-btn">Get in touch</a>
         </div>
         <div class="main-right">
@@ -112,46 +130,69 @@
         <!-- PROJECT 1 -->
         <div class="project project1">
           <div class="project-info">
-            <h4 class="h4">Project Numero Uno</h4>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-              consequuntur distinctio inventore adipisci fugiat ratione quasi
-              quis laboriosam, vitae iure. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quaerat enim sapiente quisquam
-              ratione harum voluptatum numquam laboriosam voluptate, ullam
-              eveniet totam voluptas dolor, nulla exercitationem recusandae
-              distinctio eius necessitatibus hic laborum reprehenderit maxime
-              ipsum laudantium mollitia. Quam odit, delectus suscipit soluta
-              sint recusandae laboriosam a eaque sapiente ipsum aspernatur eos.
+            <div class="project-info-upper-section">
+              <a href="https://x-com-clone.herokuapp.com/index.html">
+                <h4 class="h4">x-kom Clone</h4>
+              </a>
+              <a class="projects-git-link" href="https://github.com/pjoterini/x-kom-Clone" target="_blank"
+              ><i class="fa-brands fa-github fa-2x"></i
+              ></a>
+            </div>
+            <p class="project-text">
+              E-commerce store with a lot of hard coded data. Made with HTML, SCSS and vanilla JS.
+              Some of the CSS/JS features are : darkmode, basic searchbar, on-click popup, on-click ad's slider, timer. Specific site navigation can be found in github README.
             </p>
-            <h6 class="h6 programs">REACT JS SASS</h6>
+            <h6 class="h6 programs">HTML | SCSS | JAVASCRYPT</h6>
           </div>
-          <div class="project-img"></div>
+          
+          <a href="https://x-com-clone.herokuapp.com/index.html" target="_blank" class="project-vid">
+            <video
+              class="vid-1"
+              muted
+              autoplay
+              loop
+              src="/images/x-kom clone video.mkv"
+            ></video>
+            <div class="video-hover">
+              <h2>See Website</h3>
+            </div>
+          </a>
         </div>
         <!-- PROJECT 2 -->
         <div class="project project2">
           <div class="project-info">
-            <h4 class="h4">Project Numero Uno</h4>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-              consequuntur distinctio inventore adipisci fugiat ratione quasi
-              quis laboriosam, vitae iure. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quaerat enim sapiente quisquam
-              ratione harum voluptatum numquam laboriosam voluptate, ullam
-              eveniet totam voluptas dolor, nulla exercitationem recusandae
-              distinctio eius necessitatibus hic laborum reprehenderit maxime
-              ipsum laudantium mollitia. Quam odit, delectus suscipit soluta
-              sint recusandae laboriosam a eaque sapiente ipsum aspernatur eos.
+            <div class="project-info-upper-section">
+              <a href="https://musicalia-app.herokuapp.com/">
+                <h4 class="h4">Musicalia</h4>
+              </a>
+              <a class="projects-git-link" href="https://github.com/pjoterini/Musicalia" target="_blank"
+              ><i class="fa-brands fa-github fa-2x"></i
+              ></a>
+            </div>
+            <p class="project-text">
+              Small fullstack music app with basic CRUD operations and API usage made with Node.js, Express, MongoDB/Mongoose, EJS and CSS. Images saving and previewing was optimized with FilePond.
             </p>
-            <h6 class="programs h6">REACT JS SASS</h6>
+            <h6 class="h6 programs">NODE.JS | EXPRESS | MONGODB/MONGOOSE | EJS | CSS</h6>
           </div>
-          <div class="project-img"></div>
+          
+          <a href="https://musicalia-app.herokuapp.com/" target="_blank" class="project-vid">
+            <video
+              class="vid-1"
+              muted
+              autoplay
+              loop
+              src="/images/Musicalia.mp4"
+            ></video>
+            <div class="video-hover">
+              <h2>See Website</h3>
+            </div>
+          </a>
         </div>
         <!-- PROJECT 3 -->
         <div class="project project3">
           <div class="project-info">
             <h4 class="h4">Project Numero Uno</h4>
-            <p>
+            <p class="project-text">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
               consequuntur distinctio inventore adipisci fugiat ratione quasi
               quis laboriosam, vitae iure. Lorem ipsum dolor sit amet
@@ -164,7 +205,7 @@
             </p>
             <h6 class="programs h6">REACT JS SASS</h6>
           </div>
-          <div class="project-img"></div>
+          <div class="project-vid"></div>
         </div>
       </section>
 
