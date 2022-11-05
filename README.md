@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-[Portfolio Site Link](https://www.x-kom.pl/)
+[Portfolio Site Link](https://piotrgorskiportfolio.glitch.me/)
 
 ## Description
 
