@@ -1,0 +1,110 @@
+:root {
+  --primary-color: #211337;
+  --secondary-color: #ffd698;
+  --accent-color: #44cead;
+  --white: #fff;
+  --gray: rgb(157, 157, 157);
+  --black: rgb(0, 0, 0);
+
+  --transition1: 300ms all ease-in-out;
+}
+
+#moreaboutme {
+  margin-top: 10rem;
+  position: relative;
+  z-index: 100;
+}
+
+.monologue {
+  color: var(--white);
+}
+
+.moreaboutcontent {
+  display: grid;
+  grid-template-columns: 38% 62%;
+}
+
+.pictures {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1.5fr;
+  gap: 1rem;
+}
+
+.pic-long {
+  grid-row: span 2;
+  width: 200px;
+  height: 400px;
+  background-color: #ffd698;
+}
+.pic-wide {
+  grid-column: span 2;
+  height: 200px;
+  width: 425px;
+  background-color: #ffd698;
+}
+
+@media (max-width: 1440px) {
+  .pictures {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr 1fr;
+  }
+  .pic-long {
+    grid-row: span 1;
+  }
+  .pic-wide {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pictures {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  .moreaboutcontent {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .pictures {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pic-long {
+    grid-row: span 1;
+    width: 150px;
+    height: 300px;
+  }
+  .pic-wide {
+    grid-column: span 2;
+    height: 160px;
+    width: 320px;
+  }
+}
+
+.bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.kot {
+  background-image: url(/images/kot.jpg);
+}
+.hala {
+  background-image: url(/images/hala.jpeg);
+}
+.dyplom {
+  background-image: url(/images/dyplom.jpg);
+}
+.magistera {
+  background-image: url(/images/magistera.jpg);
+}
+.kot2 {
+  background-image: url(/images/kot2.jpg);
+}
+.plaza {
+  background-image: url(/images/plaza.jpg);
+}
