@@ -22,7 +22,6 @@ let star19 = document.querySelector(".star19");
 let star20 = document.querySelector(".star20");
 let moon = document.querySelector(".moon");
 
-
 setInterval(spark, 3000);
 function spark() {
   star.classList.toggle("spark");
@@ -145,21 +144,20 @@ function spark20() {
 
 // NAVBAR
 
-let burgerBtnOpen = document.querySelector('.burger-btn-open')
-let burgerBtnClose = document.querySelector('.burger-btn-close')
-let navLinksUl = document.querySelector('.nav-links-ul')
+let burgerBtnOpen = document.querySelector(".burger-btn-open");
+let burgerBtnClose = document.querySelector(".burger-btn-close");
+let navLinksUl = document.querySelector(".nav-links-ul");
 
-
-burgerBtnOpen.addEventListener('click', () => {
-  burgerBtnOpen.classList.add('display-none')
-  burgerBtnClose.classList.remove('display-none')
-  navLinksUl.classList.remove('display-none')
-})
-burgerBtnClose.addEventListener('click', () => {
-  burgerBtnClose.classList.add('display-none')
-  burgerBtnOpen.classList.remove('display-none')
-  navLinksUl.classList.add('display-none')
-})
+burgerBtnOpen.addEventListener("click", () => {
+  burgerBtnOpen.classList.add("display-none");
+  burgerBtnClose.classList.remove("display-none");
+  navLinksUl.classList.remove("display-none");
+});
+burgerBtnClose.addEventListener("click", () => {
+  burgerBtnClose.classList.add("display-none");
+  burgerBtnOpen.classList.remove("display-none");
+  navLinksUl.classList.add("display-none");
+});
 //  MOON
 
 setInterval(spark21, 5550);
@@ -178,6 +176,25 @@ setInterval(arrowMove, 1200);
 function arrowMove() {
   arrows.classList.toggle("arrow-move");
 }
+
+// INTERSECTION OBSERVER, PROJECTS
+
+let projects = document.querySelectorAll(".project-vid");
+
+const projectsObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("show-project-vid", entry.isIntersecting);
+    });
+  },
+  {
+    threshold: 0,
+  }
+);
+
+projects.forEach((project) => {
+  projectsObserver.observe(project);
+});
 
 // ARCH IMAGES
 

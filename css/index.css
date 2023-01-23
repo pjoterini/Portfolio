@@ -397,14 +397,20 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   height: 22rem;
   display: flex;
+  margin-left: 5rem;
   justify-content: center;
   align-items: center;
-
-  margin-left: 5rem;
-
   cursor: pointer;
   overflow: hidden;
+  transition: 1000ms ease-in-out;
+  transform: translateX(40%);
+  opacity: 0.1;
   z-index: 2;
+}
+
+.show-project-vid {
+  transform: translateX(0%);
+  opacity: 1;
 }
 
 .video-hover {
@@ -738,6 +744,8 @@ textarea {
   color: var(--white);
 }
 
+/* 1440px /////////////////////////// */
+
 @media (max-width: 1440px) {
   .project {
     display: grid;
@@ -751,6 +759,8 @@ textarea {
     margin-left: 0rem;
   }
 }
+
+/* 1024px /////////////////////////// */
 
 @media (max-width: 1024px) {
   .main-nav {
@@ -837,7 +847,7 @@ textarea {
   }
 }
 
-/* ////////////////////// 720px */
+/* 720px ////////////////////// */
 
 @media (max-width: 720px) {
   :root {
