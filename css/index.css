@@ -340,14 +340,14 @@ body::-webkit-scrollbar-thumb {
 
 #projects {
   padding-top: 5rem;
-  margin-top: 15rem;
+  margin-top: 10rem;
   width: 100%;
 }
 
 .project {
   display: grid;
   grid-template-columns: 35% 65%;
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 .project-info {
@@ -449,6 +449,67 @@ body::-webkit-scrollbar-thumb {
 
 .projects h6 {
   color: var(--secondary-color);
+}
+
+/* INTERVIEW TASKS */
+
+#interview-tasks {
+  margin-top: 10rem;
+}
+
+#interview-tasks h4 {
+  font-weight: 300;
+}
+
+.tasks-container {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+}
+
+.task-h {
+  font-size: 1.4rem;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.task-features {
+  padding-bottom: 1rem;
+}
+
+.features {
+  padding: 0.2rem 0;
+  text-transform: none;
+  color: var(--secondary-color);
+}
+
+.task-img-link {
+  width: 100%;
+  flex: 1;
+  background-color: var(--primary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.task-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.contain {
+  object-fit: contain;
 }
 
 /* ARCH PFOLIO */
@@ -929,6 +990,38 @@ textarea {
     margin-left: 0rem;
   }
 
+  .tasks-container {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .task {
+    width: 100%;
+    flex-direction: row;
+    padding-bottom: 2rem;
+  }
+
+  .task-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .task-features {
+    padding-left: 2rem;
+  }
+
+  .projects-git-link {
+    margin: 0;
+  }
+
+  .task-img-link {
+    display: none;
+  }
+
   #arch-portfolio {
     margin-top: 8rem;
   }
@@ -969,6 +1062,7 @@ textarea {
   }
 
   #cv {
+    margin-top: 40rem;
     margin-bottom: 7rem;
   }
 

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicons/favicon-120.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -16,7 +17,7 @@
     <link rel="stylesheet" href="css/background.css" />
 
     <script defer src="script.js"></script>
-    <title>PiotrGórski_portfolio</title>
+    <title>PiotrGórskiPortfolio</title>
   </head>
   <body>
     <!-- BACKGROUND STARS -->
@@ -125,6 +126,90 @@
 
       <section id="projects">
         <h2 class="h2">Projects</h2>
+        <!-- PROJECT 3 -->
+        <div class="project project3">
+          <div class="project-info">
+            <div class="project-info-upper-section">
+              <a href="https://alpost-frontend-production.up.railway.app/">
+                <h4 class="h4">Alpost</h4>
+              </a>
+              <a
+                class="projects-git-link"
+                href="https://github.com/pjoterini/ALpost-frontend"
+                target="_blank"
+                ><i class="fa-brands fa-github fa-2x"></i
+              ></a>
+            </div>
+            <p class="project-text">
+              Fullstack Forum App with features such as AUTH managed with
+              cookies in express-sessions, caching in urql, SSR plus CSR usage,
+              password reset and cursor based pagination. Backend uses GRAPHQL
+              API.
+            </p>
+            <h6 class="h6 programs">
+              REACT | NODE.JS | POSTGRESQL | TYPESCRIPT | GRAPHQL | URQL |
+              TYPEORM | REDIS | NEXTJS | CHAKRA UI
+            </h6>
+          </div>
+
+          <a
+            href="https://alpost-frontend-production.up.railway.app/"
+            target="_blank"
+            class="project-vid"
+          >
+            <video
+              class="vid-1"
+              muted
+              autoplay
+              loop
+              src="/images/alpost.mkv"
+            ></video>
+            <div class="video-hover">
+              <h2>See Website</h2>
+            </div>
+          </a>
+        </div>
+        <!-- PROJECT 2 -->
+        <div class="project project2">
+          <div class="project-info">
+            <div class="project-info-upper-section">
+              <a href="https://musicalia-.glitch.me/">
+                <h4 class="h4">Musicalia</h4>
+              </a>
+              <a
+                class="projects-git-link"
+                href="https://github.com/pjoterini/Musicalia"
+                target="_blank"
+                ><i class="fa-brands fa-github fa-2x"></i
+              ></a>
+            </div>
+            <p class="project-text">
+              Fullstack music app with CRUD operations and NEWS API usage made
+              with Node.js, Express, MongoDB/Mongoose, EJS and CSS. Images
+              saving and previewing was optimized with FilePond.
+            </p>
+            <h6 class="h6 programs">
+              NODE.JS | EXPRESS | MONGODB/MONGOOSE | EJS | CSS
+            </h6>
+          </div>
+
+          <a
+            href="https://musicalia-.glitch.me/"
+            target="_blank"
+            class="project-vid"
+          >
+            <video
+              class="vid-1"
+              muted
+              autoplay
+              loop
+              src="/images/Musicalia.mp4"
+            ></video>
+            <div class="video-hover">
+              <h2>See Website</h2>
+            </div>
+          </a>
+        </div>
         <!-- PROJECT 1 -->
         <div class="project project1">
           <div class="project-info">
@@ -165,88 +250,97 @@
             </div>
           </a>
         </div>
-        <!-- PROJECT 2 -->
-        <div class="project project2">
-          <div class="project-info">
-            <div class="project-info-upper-section">
-              <a href="https://musicalia-.glitch.me/">
-                <h4 class="h4">Musicalia</h4>
-              </a>
+      </section>
+
+      <!-- INTERVIEW TASKS -->
+
+      <section id="interview-tasks">
+        <h4 class="h4">
+          Here are some interview tasks i've done. Most up-to-date code i write
+          is here
+        </h4>
+        <div class="tasks-container">
+          <!-- TASK 1 -->
+          <div class="task">
+            <div class="task-header">
+              <h4 class="h4 task-h">Task 1 Features</h4>
               <a
                 class="projects-git-link"
-                href="https://github.com/pjoterini/Musicalia"
+                href="https://github.com/pjoterini/gnNews"
                 target="_blank"
                 ><i class="fa-brands fa-github fa-2x"></i
               ></a>
             </div>
-            <p class="project-text">
-              Small fullstack music app with basic CRUD operations and API usage
-              made with Node.js, Express, MongoDB/Mongoose, EJS and CSS. Images
-              saving and previewing was optimized with FilePond.
-            </p>
-            <h6 class="h6 programs">
-              NODE.JS | EXPRESS | MONGODB/MONGOOSE | EJS | CSS
-            </h6>
-          </div>
-
-          <a
-            href="https://musicalia-.glitch.me/"
-            target="_blank"
-            class="project-vid"
-          >
-            <video
-              class="vid-1"
-              muted
-              autoplay
-              loop
-              src="/images/Musicalia.mp4"
-            ></video>
-            <div class="video-hover">
-              <h2>See Website</h2>
+            <div class="task-features">
+              <h6 class="h6 features">> REACT</h6>
+              <h6 class="h6 features">> TypeScript</h6>
+              <h6 class="h6 features">> News API</h6>
+              <h6 class="h6 features">> Redux ToolKit</h6>
+              <h6 class="h6 features">> react-router-dom</h6>
+              <h6 class="h6 features">> react-testing-library</h6>
+              <h6 class="h6 features">> i18next, translator lib.</h6>
             </div>
-          </a>
-        </div>
-        <!-- PROJECT 3 -->
-        <div class="project project3">
-          <div class="project-info">
-            <div class="project-info-upper-section">
-              <a href="https://alpost-frontend-production.up.railway.app/">
-                <h4 class="h4">Alpost</h4>
-              </a>
+
+            <a
+              href="https://github.com/pjoterini/gnNews"
+              target="_blank"
+              class="task-img-link"
+            >
+              <img class="task-img" src="/images/task3.png" alt="task-img" />
+            </a>
+          </div>
+          <!-- TASK 2 -->
+          <div class="task">
+            <div class="task-header">
+              <h4 class="h4 task-h">Task 2 Features</h4>
               <a
                 class="projects-git-link"
-                href="https://github.com/pjoterini/ALpost-frontend"
+                href="https://github.com/pjoterini/nerdboard_task"
                 target="_blank"
                 ><i class="fa-brands fa-github fa-2x"></i
               ></a>
             </div>
-            <p class="project-text">
-              Fullstack app made after tinkering with project which was the
-              final product of completing Ben Awads "Fullstack React GraphQL
-              TypeScript Tutorial".
-            </p>
-            <h6 class="h6 programs">
-              REACT | NODE.JS | POSTGRESQL | TYPESCRIPT | GRAPHQL | URQL |
-              TYPEORM | REDIS | NEXTJS | CHAKRA UI
-            </h6>
-          </div>
-
-          <a
-            href="https://alpost-frontend-production.up.railway.app/"
-            target="_blank"
-            class="project-vid"
-          >
-            <video
-              class="vid-1"
-              muted
-              autoplay
-              loop
-              src="/images/alpost.mkv"
-            ></video>
-            <div class="video-hover">
-              <h2>See Website</h2>
+            <div class="task-features">
+              <h6 class="h6 features">> NEXT</h6>
+              <h6 class="h6 features">> TypeScript</h6>
+              <h6 class="h6 features">> Multiple useRef hook management</h6>
+              <h6 class="h6 features">> html-react-parser library</h6>
             </div>
-          </a>
+
+            <a
+              href="https://github.com/pjoterini/nerdboard_task"
+              target="_blank"
+              class="task-img-link"
+            >
+              <img class="task-img" src="/images/task2.png" alt="task-img" />
+            </a>
+          </div>
+          <!-- TASK 3 -->
+          <div class="task">
+            <div class="task-header">
+              <h4 class="h4 task-h">Task 3 Features</h4>
+              <a
+                class="projects-git-link"
+                href="https://github.com/pjoterini/mits_task"
+                target="_blank"
+                ><i class="fa-brands fa-github fa-2x"></i
+              ></a>
+            </div>
+            <div class="task-features">
+              <h6 class="h6 features">> REACT</h6>
+              <h6 class="h6 features">> RWD</h6>
+              <h6 class="h6 features">> Custom Slider</h6>
+              <h6 class="h6 features">> A bit complex useState</h6>
+            </div>
+
+            <a
+              href="https://github.com/pjoterini/mits_task"
+              target="_blank"
+              class="task-img-link"
+            >
+              <img class="task-img n" src="/images/task1.png" alt="task-img" />
+            </a>
+          </div>
         </div>
       </section>
 
@@ -291,11 +385,14 @@
 
       <section id="cv">
         <h2 class="h2 cv-title">CV</h2>
-        <a href="/images/CV_Piotr_Górski_pl.pdf" target="_blank" class="btn"
+        <a
+          href="/images/CV_Piotr_Górski_pl_noTel.pdf"
+          target="_blank"
+          class="btn"
           >CV - polish</a
         >
         <a
-          href="/images/CV_Piotr_Górski_eng.pdf"
+          href="/images/CV_Piotr_Górski_eng_noTel.pdf"
           target="_blank"
           class="btn cv-btn"
           >CV - english</a
