@@ -999,23 +999,23 @@ textarea {
 
   .task {
     width: 100%;
-    flex-direction: row;
     padding-bottom: 2rem;
   }
 
   .task-header {
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding-bottom: 0;
   }
 
   .task-features {
     padding-left: 2rem;
+    width: 100%;
   }
 
-  .projects-git-link {
+  a.projects-git-link {
     margin: 0;
+    padding: 0.5rem;
   }
 
   .task-img-link {
