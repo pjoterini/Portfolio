@@ -2,7 +2,6 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
   entry: {
     bundle: path.resolve(__dirname, "src/index.js"),
   },
@@ -12,13 +11,9 @@ module.exports = {
     clean: true,
     assetModuleFilename: "assets/[name][ext]",
   },
-  devtool: "source-map",
+
   module: {
     rules: [
-      {
-        test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
       {
         test: /\.js$/,
         exclude: /node_modules/,

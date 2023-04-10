@@ -1,33 +1,15 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { merge } = require("webpack-merge");
+const common = require("./webpack.common");
 
-module.exports = {
+module.exports = merge(common, {
   mode: "development",
-  entry: {
-    bundle: path.resolve(__dirname, "src/index.js"),
-  },
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "[name][contenthash].js",
-    clean: true,
-    assetModuleFilename: "assets/[name][ext]",
-  },
-  devtool: "source-map",
+  devtool: "inline-source-map",
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.scss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-          },
-        },
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif|webp|mkv|pdf|mp4)$/i,
@@ -35,23 +17,6 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "PiotrGórskiPortfolio",
-      filename: "index.html",
-      template: "src/template.html",
-    }),
-    new HtmlWebpackPlugin({
-      title: "PiotrGórskiPortfolio",
-      filename: "thankyou.html",
-      template: "src/pages/thankyou.html",
-    }),
-    new HtmlWebpackPlugin({
-      title: "PiotrGórskiPortfolio",
-      filename: "more-about-me.html",
-      template: "src/pages/more-about-me.html",
-    }),
-  ],
   devServer: {
     static: {
       directory: path.join(__dirname, "dist"),
@@ -62,4 +27,4 @@ module.exports = {
     hot: true,
     historyApiFallback: true,
   },
-};
+});
