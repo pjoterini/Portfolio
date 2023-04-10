@@ -1,0 +1,91 @@
+#contact {
+    margin: 5rem auto 0 auto;
+    width: 100%;
+  }
+  
+  .form {
+    margin-top: 4rem;
+    width: 60%;
+  }
+  
+  .inputs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+    color: $white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .inputs label {
+    margin-bottom: 0.7rem;
+  }
+  
+  .inputs input,
+  textarea {
+    background-color: $primary-color;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid $secondary-color;
+    color: $white;
+    font-weight: 18px;
+    transition: $transition1;
+  }
+  
+  input,
+  select,
+  textarea {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    padding: 1rem 1.5rem;
+  }
+  
+  .form-btn {
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 18px;
+  }
+
+  /* 1024px /////////////////////////// */
+
+@media (max-width: 1024px) {
+  #contact {
+    margin: 0rem auto 0 auto;
+  }
+
+  .form {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .form-btn {
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 18px;
+  }
+}
+
+/* 720px ////////////////////// */
+
+@media (max-width: 720px) {
+  #contact {
+    margin: 0rem auto 0 auto;
+  }
+
+  .form {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .form-btn {
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 18px;
+  }
+}

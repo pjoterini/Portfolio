@@ -1,0 +1,194 @@
+#arch-portfolio {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 15rem;
+    width: 100%;
+  }
+  
+  .condition {
+    display: flex;
+    align-items: center;
+  }
+  
+  .condition h4 {
+    margin-left: 2rem;
+    font-weight: 300;
+  }
+  
+  .condition .if {
+    margin-left: 0;
+    color: $accent-color;
+    font-weight: 700;
+  }
+  
+  .orange {
+    color: $secondary-color;
+  }
+  
+  .accent {
+    color: $accent-color;
+  }
+  
+  .then {
+    margin-left: 4.6rem;
+  }
+  
+  .then h4 {
+    font-weight: 300;
+  }
+  
+  .then h2 {
+    margin-left: -0.8rem;
+    margin-top: 8.4rem;
+  }
+  
+  .then strong {
+    margin-left: -1rem;
+  }
+  
+  .arch-images {
+    position: absolute;
+    top: 350px;
+    left: -415px;
+    margin: 10rem 0;
+  
+    display: flex;
+    justify-content: space-evenly;
+  
+    filter: grayscale(100%);
+    transition: filter 500ms ease-in-out;
+    overflow: hidden;
+  }
+  
+  .arch-images:hover {
+    filter: grayscale(0%);
+  }
+  
+  .check-pdf {
+    display: none;
+  }
+  
+  .check-pdf .h3 {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: $accent-color;
+    border-radius: 40px;
+    pointer-events: none;
+  }
+  
+  .check-pdf-hover {
+    position: absolute;
+    top: 620px;
+  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $transition1;
+    pointer-events: none;
+  }
+  
+  .arch-img {
+    padding: 5rem;
+    width: 500px;
+    height: 300px;
+    margin: 0 0.3rem;
+    cursor: pointer;
+  }
+  .arch-img1 {
+    background-image: url(./assets/1.webp);
+    background-position: center;
+    background-size: contain;
+  }
+  .arch-img2 {
+    background-image: url(./assets/2.webp);
+    background-position: center;
+    background-size: contain;
+  }
+  .arch-img3 {
+    background-image: url(./assets/3.webp);
+    background-position: center;
+    background-size: contain;
+  }
+  .arch-img4 {
+    background-image: url(./assets/4.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .arch-img5 {
+    background-image: url(./assets/5.webp);
+    background-position: center;
+    background-size: contain;
+  }
+  .arch-img6 {
+    background-image: url(./assets/6.webp);
+    background-position: center;
+    background-size: contain;
+  }
+  .arch-img7 {
+    background-image: url(./assets/7.webp);
+    background-position: center;
+    background-size: contain;
+  }
+  .arch-img8 {
+    background-image: url(./assets/8.webp);
+    background-position: center;
+    background-size: contain;
+  }
+
+  /* 1024px /////////////////////////// */
+
+@media (max-width: 1024px) {
+  #arch-portfolio {
+    margin-top: 8rem;
+  }
+
+  .then {
+    margin-top: 1rem;
+    margin-left: 3.5rem;
+  }
+}
+
+/* 720px ////////////////////// */
+
+@media (max-width: 720px) {
+  #arch-portfolio {
+    margin-top: 8rem;
+  }
+
+  .then {
+    margin-top: 1rem;
+    margin-left: 3.5rem;
+  }
+
+  .then h2 {
+    margin-left: -0.8rem;
+    margin-top: 3rem;
+    font-size: 42px;
+  }
+
+  .then strong {
+    margin-left: -1rem;
+  }
+
+  .arch-images {
+    top: 350px;
+  }
+
+  .arch-images:hover {
+    filter: grayscale(0%);
+  }
+
+  .check-pdf .h3 {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: $accent-color;
+    border-radius: 40px;
+    pointer-events: none;
+  }
+
+  .check-pdf-hover {
+    top: 600px;
+  }
+}

@@ -1,0 +1,30 @@
+.burger-menu {
+  color: $white;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-btns {
+  display: none;
+}
+
+/* 720px ////////////////////// */
+
+@media (max-width: 720px) {
+  .burger-menu {
+    margin-top: 2rem;
+    border: 1px solid $accent-color;
+    border-radius: 20px;
+  }
+
+  .burger-btns {
+    display: block;
+  }
+
+  .burger-btn-close {
+    margin-top: 0.5rem;
+  }
+}

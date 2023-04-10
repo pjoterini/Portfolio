@@ -1,0 +1,67 @@
+
+
+:root {
+    --primary-color: #211337;
+    --secondary-color: #ffd698;
+    --accent-color: #44cead;
+    --white: #fff;
+    --gray: rgb(157, 157, 157);
+    --black: rgb(0, 0, 0);
+    --transition1: 300ms all ease-in-out;
+}
+    $primary-color: var(--primary-color);
+    $secondary-color:var(--secondary-color);
+    $accent-color: var(--accent-color);
+    $white: var(--white);
+    $gray: var(--gray);
+    $black: var(--black);
+    $transition1: var(--transition1);
+
+
+
+.h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 4.5rem;
+    color: $white;
+}
+.h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 3.2rem;
+    color: $white;
+}
+.h3 {
+    font-weight: 300;
+    font-size: 1.8rem;
+    color:$white;
+}
+.h4 {
+    font-size: 2rem;
+    color:$white;
+    font-weight: 700;
+}
+.h6 {
+    font-size: 18px;
+    color:$white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.8rem;
+    font-size: 18px;
+    color:$gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fade-text {
+    color: $white;
+    opacity: .3;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}

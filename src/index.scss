@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap");
+@import './styles/variables.scss';
+@import './styles/background.scss';
+@import './styles/burger-menu.scss';
+@import './styles/nav.scss';
+@import './styles/main.scss';
+@import './styles/arrows.scss';
+@import './styles/projects.scss';
+@import './styles/interview-tasks.scss';
+@import './styles/arch-portfolio.scss';
+@import './styles/cv.scss';
+@import './styles/about-me.scss';
+@import './styles/contact.scss';
+@import './styles/footer.scss';
+@import './styles/moreaboutme.scss';
+@import './styles/thank-you-site.scss';
+@import './styles/moon-light-mode.scss';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  background-color: $primary-color;
+  z-index: -3;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}
+body::-webkit-scrollbar-track {
+  background: $white;
+}
+body::-webkit-scrollbar-thumb {
+  background: $gray;
+}
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: $primary-color;
+}
+
+/* 720px ////////////////////// */
+
+@media (max-width: 720px) {
+  :root {
+    font-size: 12px;
+  }
+  
+  .display-none {
+    display: none;
+  }
+}
