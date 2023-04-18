@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap");
 @import './styles/variables.scss';
 @import './styles/background.scss';
+@import './styles/waves.scss';
 @import './styles/burger-menu.scss';
 @import './styles/nav.scss';
 @import './styles/main.scss';
@@ -26,6 +27,7 @@
 }
 
 body {
+  position: relative;
   font-size: 18px;
   background-color: $primary-color;
   z-index: -3;
