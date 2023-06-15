@@ -31,6 +31,7 @@ import navbar from './javascript/navbar'
 import projects from './javascript/projects'
 import spaceBackground from './javascript/spaceBackground'
 import colorTheme from './javascript/colorTheme'
+import Portfolio_ARCH from './assets/Portfolio_ARCH.pdf'
 
 spaceBackground()
 navbar()
