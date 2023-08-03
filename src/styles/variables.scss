@@ -1,69 +1,76 @@
-
-
 :root {
-    --primary-color: #211337;
-    --secondary-color: #ffd698;
-    --accent-color: #44cead;
-    --white: #fff;
-    --gray: rgb(157, 157, 157);
-    --black: rgb(0, 0, 0);
-    --transition1: 300ms all ease-in-out;
+  --primary-color: #211337;
+  --secondary-color: #ffd698;
+  --accent-color: #44cead;
+  --error-color: #f1316e;
+  --white: #fff;
+  --gray: rgb(157, 157, 157);
+  --black: rgb(0, 0, 0);
+  --transition1: 300ms all ease-in-out;
 }
-    $primary-color: var(--primary-color);
-    $secondary-color:var(--secondary-color);
-    $accent-color: var(--accent-color);
-    $white: var(--white);
-    $gray: var(--gray);
-    $black: var(--black);
-    $transition1: var(--transition1);
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$accent-color: var(--accent-color);
+$error-color: var(--error-color);
+$white: var(--white);
+$gray: var(--gray);
+$black: var(--black);
+$transition1: var(--transition1);
 
-.h1, .h2, .h3, .h4, .h6 {
-    color: $white;
-    position: relative;
-    z-index: 2;
+.h1,
+.h2,
+.h3,
+.h4,
+.h6 {
+  color: $white;
+  position: relative;
+  z-index: 2;
 }
 
 .h1 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 4.5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 4.5rem;
 }
 .h2 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 3.2rem;
-
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 3.2rem;
 }
 .h3 {
-    font-weight: 300;
-    font-size: 1.8rem;
+  font-weight: 300;
+  font-size: 1.8rem;
 }
 .h4 {
-    font-size: 2rem;
-    font-weight: 700;
+  font-size: 2rem;
+  font-weight: 700;
 }
 .h6 {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 p {
-    position: relative;
-    line-height: 1.8rem;
-    font-size: 18px;
-    color:$gray;
-    font-family: 'Montserrat', sans-serif;
-    z-index: 2;
+  position: relative;
+  line-height: 1.8rem;
+  font-size: 18px;
+  color: $gray;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 2;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .fade-text {
-    color: $white;
-    opacity: .3;
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
+  color: $white;
+  opacity: 0.3;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.error {
+  color: $error-color;
 }
