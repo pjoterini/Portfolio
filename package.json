@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "[Portfolio Site Link](https://piotrgorskiportfolio.glitch.me/)",
+  "description": "[Portfolio Site Link](https://piotrgorski.com)",
   "main": "index.js",
   "scripts": {
     "start": "node app.js",

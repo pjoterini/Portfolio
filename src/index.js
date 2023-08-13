@@ -25,13 +25,13 @@ import task2 from './assets/task2.webp'
 import task3 from './assets/task3.webp'
 import xkom from './assets/x_kom_clone.mp4'
 import favicon from './assets/favicon.png'
+import Portfolio_ARCH from './assets/Portfolio_ARCH.pdf'
 import archImages from './javascript/archImages'
 import arrows from './javascript/arrows'
 import navbar from './javascript/navbar'
 import projects from './javascript/projects'
 import spaceBackground from './javascript/spaceBackground'
 import colorTheme from './javascript/colorTheme'
-import Portfolio_ARCH from './assets/Portfolio_ARCH.pdf'
 
 spaceBackground()
 navbar()
