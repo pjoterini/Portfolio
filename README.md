@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-[Portfolio Site Link](https://piotrgorskiportfolio.glitch.me/)
+[Portfolio Site Link](https://piotrgorski.com)
 
 ## Description
 
