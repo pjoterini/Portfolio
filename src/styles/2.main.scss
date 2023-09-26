@@ -27,26 +27,6 @@
   margin-top: 1rem;
 }
 
-.btn {
-  width: 160px;
-  text-align: center;
-  display: inline-block;
-  background-color: $accent-color;
-  color: $white;
-  text-decoration: none;
-  padding: 1rem;
-  border-radius: 30px;
-  font-weight: 700;
-}
-.btn:hover {
-  -webkit-box-shadow: inset 0px 0px 0px 2px $accent-color;
-  -moz-box-shadow: inset 0px 0px 0px 2px $accent-color;
-  box-shadow: inset 0px 0px 0px 2px $accent-color;
-
-  background-color: transparent;
-  transition: $transition1;
-}
-
 .contact-btn {
   margin-top: 3rem;
 }

@@ -1,5 +1,5 @@
 #interview-tasks {
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 #interview-tasks h4 {
@@ -16,7 +16,6 @@
 .task {
   display: flex;
   flex-direction: column;
-
   width: 30%;
 }
 
@@ -42,15 +41,15 @@
 }
 
 .task-img-link {
-  width: 100%;
   flex: 1;
-  background-color: $primary-color;
-  border-bottom: 1px solid $secondary-color;
+  display: flex;
+  align-items: flex-end;
 }
 
 .task-img {
+  height: 340px;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .contain {

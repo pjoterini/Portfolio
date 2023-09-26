@@ -73,9 +73,9 @@
   transform: scale(1.1);
 }
 
-/* 1024px /////////////////////////// */
+/* 1140px /////////////////////////// */
 
-@media (max-width: 1024px) {
+@media (max-width: 1140px) {
   .main-nav {
     flex-direction: column;
     align-items: flex-start;
@@ -85,9 +85,9 @@
   }
 }
 
-/* 720px ////////////////////// */
+/* 900px ////////////////////// */
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .main-nav {
     margin-top: 1rem;
     display: flex;

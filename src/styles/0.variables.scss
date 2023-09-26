@@ -7,6 +7,7 @@
   --gray: rgb(157, 157, 157);
   --black: rgb(0, 0, 0);
   --transition1: 300ms all ease-in-out;
+  --transition2: 600ms all ease-in-out;
 }
 $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
@@ -16,6 +17,7 @@ $white: var(--white);
 $gray: var(--gray);
 $black: var(--black);
 $transition1: var(--transition1);
+$transition2: var(--transition2);
 
 .h1,
 .h2,

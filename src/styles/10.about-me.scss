@@ -1,39 +1,39 @@
 #about-me {
-    width: 100%;
-    margin: 0rem auto 15rem auto;
-  }
-  
-  .about-me-content {
-    display: grid;
-    grid-template-columns: 60% 40%;
-  }
-  
-  .left-col {
-    padding-right: 5rem;
-  }
-  
-  .left-col h2 {
-    margin-bottom: 2rem;
-  }
-  
-  .about-me-btn {
-    margin-top: 2rem;
-  }
-  
-  .my-picture {
-    background-image: url(./assets/my-image.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-bottom: 1px solid $secondary-color;
-  }
+  width: 100%;
+  margin: 0rem auto 10rem auto;
+}
 
-  /* 1024px /////////////////////////// */
+.about-me-content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.left-col {
+  padding-right: 5rem;
+}
+
+.left-col h2 {
+  margin-bottom: 2rem;
+}
+
+.about-me-btn {
+  margin-top: 2rem;
+}
+
+.my-picture {
+  background-image: url(./assets/my-image.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid $secondary-color;
+}
+
+/* 1024px /////////////////////////// */
 
 @media (max-width: 1024px) {
   #about-me {
     margin: 25rem auto;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
   }
 
   .about-me-content {
