@@ -30,13 +30,13 @@ import blog from './assets/blog.jpg'
 import archImages from './javascript/archImages'
 import arrows from './javascript/arrows'
 import navbar from './javascript/navbar'
-import projects from './javascript/projects'
+import intersectionObservers from './javascript/intersectionObservers'
 import spaceBackground from './javascript/spaceBackground'
 import colorTheme from './javascript/colorTheme'
 
 spaceBackground()
 navbar()
 arrows()
-projects()
+intersectionObservers()
 archImages()
 colorTheme()

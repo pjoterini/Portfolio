@@ -1,6 +1,5 @@
 #arch-portfolio {
-  position: relative;
-  margin-top: 10rem;
+  margin-top: 12rem;
   width: 100%;
 }
 
@@ -45,119 +44,122 @@
   margin-left: -1rem;
 }
 
+.arch-images-container {
+  position: absolute;
+  display: block;
+  margin-top: 5rem;
+  left: 0vw;
+  height: 300px;
+  width: 100%;
+}
+
 .arch-images {
   position: absolute;
-  top: 270px;
-  left: -415px;
-  margin: 4rem 0;
-
   display: flex;
-  justify-content: space-evenly;
 
   filter: grayscale(100%);
   transition: filter 500ms ease-in-out;
   overflow: hidden;
 }
-
 .arch-images:hover {
   filter: grayscale(0%);
 }
 
-.check-pdf {
-  display: none;
-}
-
-.check-pdf .h3 {
-  text-decoration: none;
-  padding: 1rem 2rem;
-  background-color: $accent-color;
-  border-radius: 40px;
-  pointer-events: none;
-}
-
-.check-pdf-hover {
-  position: absolute;
-  top: 450px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: $transition1;
-  pointer-events: none;
-}
-
 .arch-img {
-  padding: 5rem;
   width: 500px;
   height: 300px;
   margin: 0 0.3rem;
-  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.arch-images-btn {
+  display: none;
+}
+
+.arch-images-btn-show {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $accent-color;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  border: none;
+  pointer-events: none;
+  transition: $transition1;
+}
+
 .arch-img1 {
   background-image: url(./assets/1.webp);
-  background-position: center;
-  background-size: contain;
 }
 .arch-img2 {
   background-image: url(./assets/2.webp);
-  background-position: center;
-  background-size: contain;
 }
 .arch-img3 {
   background-image: url(./assets/3.webp);
-  background-position: center;
-  background-size: contain;
 }
 .arch-img4 {
   background-image: url(./assets/4.webp);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .arch-img5 {
   background-image: url(./assets/5.webp);
-  background-position: center;
-  background-size: contain;
 }
 .arch-img6 {
   background-image: url(./assets/6.webp);
-  background-position: center;
-  background-size: contain;
 }
 .arch-img7 {
   background-image: url(./assets/7.webp);
-  background-position: center;
-  background-size: contain;
 }
 .arch-img8 {
   background-image: url(./assets/8.webp);
-  background-position: center;
-  background-size: contain;
 }
 
 /* 1024px /////////////////////////// */
 
 @media (max-width: 1024px) {
   #arch-portfolio {
-    margin-top: 8rem;
+    margin-top: 10rem;
   }
 
-  .then {
-    margin-top: 1rem;
-    margin-left: 3.5rem;
+  .condition h4 {
+    font-size: 1.5rem;
+  }
+
+  .then h4 {
+    font-size: 1.5rem;
+    margin-left: -0.5rem;
   }
 }
 
 /* 720px ////////////////////// */
 
 @media (max-width: 720px) {
-  #arch-portfolio {
-    margin-top: 8rem;
+  .condition {
+    display: block;
+  }
+
+  .condition h4 {
+    font-size: 1.3rem;
+    margin-left: 0;
+  }
+
+  .condition .if {
+    margin-left: 0;
   }
 
   .then {
-    margin-top: 1rem;
-    margin-left: 3.5rem;
+    margin-left: 0;
+  }
+
+  .then h4 {
+    font-size: 1.3rem;
+    margin-left: 0.8rem;
   }
 
   .then h2 {
@@ -167,26 +169,10 @@
   }
 
   .then strong {
-    margin-left: -1rem;
+    margin-left: -0.7rem;
   }
 
-  .arch-images {
-    top: 350px;
-  }
-
-  .arch-images:hover {
-    filter: grayscale(0%);
-  }
-
-  .check-pdf .h3 {
-    text-decoration: none;
-    padding: 1rem 2rem;
-    background-color: $accent-color;
-    border-radius: 40px;
-    pointer-events: none;
-  }
-
-  .check-pdf-hover {
-    top: 530px;
+  .then h2 {
+    margin-left: 0rem;
   }
 }

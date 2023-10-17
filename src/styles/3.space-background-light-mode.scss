@@ -1,0 +1,15 @@
+.sun {
+  background: linear-gradient(45deg, rgb(241, 222, 115), rgb(230, 139, 66));
+  border-right: 0px;
+}
+.rain {
+  background: linear-gradient(45deg, $secondary-color, rgb(74, 141, 180));
+  border: none;
+  opacity: 1;
+  transform: translateY(-100%) scaleY(0.3);
+  top: 100vh;
+
+  transition-property: opacity, box-shadow, transform, top;
+  transition-duration: 2500ms;
+  transition-timing-function: ease-in;
+}

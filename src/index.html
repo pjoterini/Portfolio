@@ -23,25 +23,25 @@
     <!-- BACKGROUND STARS -->
     <div class="stars">
       <div class="star star1 l spark"></div>
-      <div class="star star2 s no-spark"></div>
-      <div class="star star3 s no-spark"></div>
-      <div class="star star4 m no-spark"></div>
+      <div class="star star2 m"></div>
+      <div class="star star3 s"></div>
+      <div class="star star4 m"></div>
       <div class="star star5 l spark"></div>
-      <div class="star star6 s no-spark"></div>
-      <div class="star star7 m no-spark"></div>
-      <div class="star star8 s no-spark"></div>
+      <div class="star star6 s"></div>
+      <div class="star star7 m"></div>
+      <div class="star star8 s"></div>
       <div class="star star9 l spark"></div>
-      <div class="star star10 s no-spark"></div>
-      <div class="star star11 m no-spark"></div>
+      <div class="star star10 s"></div>
+      <div class="star star11 m"></div>
       <div class="star star12 l spark"></div>
-      <div class="star star13 m no-spark"></div>
-      <div class="star star14 m no-spark"></div>
-      <div class="star star15 m no-spark"></div>
+      <div class="star star13 m"></div>
+      <div class="star star14 m"></div>
+      <div class="star star15 m"></div>
       <div class="star star16 m spark"></div>
-      <div class="star star17 l no-spark"></div>
-      <div class="star star18 l no-spark"></div>
+      <div class="star star17 l"></div>
+      <div class="star star18 l"></div>
       <div class="star star19 s spark"></div>
-      <div class="star star20 m no-spark"></div>
+      <div class="star star20 m"></div>
     </div>
 
     <!-- WAVE 1 -->
@@ -49,33 +49,32 @@
     <!-- <div class="spacer wave1"></div> -->
 
     <div class="container">
-      <!-- MAIN-NAV -->
-
-      <div class="main-nav">
-        <div class="logo-and-mode">
-          <div class="logo">
-            <a href="./index.html"><div class="logo-img"></div></a>
-          </div>
-          <div class="color-mode">
-            <ul class="color-mode-ul">
-              <li class="moon-icon active"><i class="fa-solid fa-moon"></i></li>
-              <li class="sun-icon"><i class="fa-solid fa-sun"></i></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="nav-links">
-          <div class="burger-menu">
-            <div class="burger-btns">
-              <div class="burger-btn-open">
-                INFO <i class="fa-solid fa-bars"></i>
-              </div>
-              <div class="burger-btn-close display-none">
-                <i class="fa-solid fa-x"></i>
-              </div>
+      <!-- MAIN VIEW -->
+      <div id="main-view">
+        <!-- MAIN-NAV -->
+        <div class="main-nav">
+          <div class="logo-and-mode">
+            <div class="logo">
+              <a href="./index.html"><div class="logo-img"></div></a>
             </div>
-
-            <ul class="nav-links-ul display-none">
+            <div class="color-mode">
+              <ul class="color-mode-ul">
+                <li class="moon-icon active">
+                  <i class="fa-solid fa-moon"></i>
+                </li>
+                <li class="sun-icon"><i class="fa-solid fa-sun"></i></li>
+              </ul>
+            </div>
+          </div>
+          <!-- MOBILE NAV -->
+          <div class="burger-menu">
+            <div class="burger-btn-open">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="burger-btn-close hide">
+              <i class="fa-solid fa-x"></i>
+            </div>
+            <ul class="nav-links-burger hide">
               <a href="#projects"><li>Projects</li></a>
               <a href="#blog"><li>Blog</li></a>
               <a href="#arch-portfolio"><li>Arch_portfolio</li></a>
@@ -84,53 +83,65 @@
               <a href="#contact"><li>Contact</li></a>
             </ul>
           </div>
+          <!-- DESKTOP NAV -->
+          <ul class="nav-links">
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#blog"><li>Blog</li></a>
+            <a href="#arch-portfolio"><li>Arch_portfolio</li></a>
+            <a href="#cv"><li>CV</li></a>
+            <a href="#about-me"><li>AboutMe</li></a>
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
         </div>
-      </div>
-
-      <!-- MAIN-CONTENT -->
-
-      <main class="main">
-        <div class="main-left">
-          <h1 class="h1">Hi, i'm Piotr</h1>
-          <main class="main-text">
-            <p class="main-text-1">Web Development</p>
-            <p class="main-text-2">Frontend / Backend</p>
-            <p class="main-text-2">UI / UX / graphic design</p>
-          </main>
-          <a href="#contact" class="btn contact-btn">Get in touch</a>
-        </div>
-        <div class="main-right">
-          <div class="moon no-spark-moon">
-            <div class="moon-holes1"></div>
-            <div class="moon-holes2"></div>
-            <div class="moon-holes3"></div>
-            <div class="moon-holes4"></div>
+        <!-- MAIN-CONTENT -->
+        <main class="main">
+          <div class="main-left">
+            <h1 class="h1">Hi, i'm Piotr</h1>
+            <main class="main-text">
+              <p class="main-text-1">Web Development</p>
+              <p class="main-text-2">Frontend / Backend</p>
+              <p class="main-text-2">UI / UX / graphic design</p>
+            </main>
+            <a href="#contact" class="btn contact-btn">Get in touch</a>
           </div>
-        </div>
-      </main>
-
-      <div class="projects-preview">
-        <div class="preview">
-          <h4 class="fade-text">
-            This site was made with plain HTML, CSS and JavaScript
-          </h4>
-          <div class="arrows">
-            <div class="arrow">
-              <div class="left"></div>
-              <div class="right"></div>
-            </div>
-            <div class="arrow2">
-              <div class="left"></div>
-              <div class="right"></div>
+          <div class="main-right">
+            <div class="moon">
+              <div class="moon-hole moon-hole-1"></div>
+              <div class="moon-hole moon-hole-2"></div>
+              <div class="moon-hole moon-hole-3"></div>
+              <div class="moon-hole moon-hole-4"></div>
+              <div class="moon-hole moon-hole-5"></div>
+              <div class="moon-hole moon-hole-6"></div>
             </div>
           </div>
+        </main>
+        <!-- ARROWS -->
+        <div class="projects-preview">
+          <div class="preview">
+            <h4 class="fade-text">
+              This site was made with plain HTML, CSS and JavaScript
+            </h4>
+            <h4 class="fade-text">CHECK LIGHTMODE FOR SOME ANIMATIONS!</h4>
+            <div class="arrows">
+              <div class="arrow">
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
+              <div class="arrow2">
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- MAIN VIEW -->
       </div>
 
       <!-- PROJECTS -->
 
       <section id="projects">
-        <h2 class="h2">Projects</h2>
+        <h2 class="h2 section-title">Projects</h2>
         <!-- PROJECT 3 -->
         <div class="project">
           <div class="project-info">
@@ -157,22 +168,32 @@
               TYPEORM | REDIS | NEXTJS | CHAKRA UI
             </h6>
           </div>
-          <a
-            href="https://alpost-frontend-production.up.railway.app/"
-            target="_blank"
-            class="project-vid"
-          >
-            <video
-              class="vid-1"
-              muted
-              autoplay
-              loop
-              src="./assets/alpost.mp4"
-            ></video>
-            <div class="video-hover">
-              <h2>See Website</h2>
+          <div class="monitor">
+            <div class="monitor-frame">
+              <div class="monitor-screen">
+                <a
+                  href="https://alpost-frontend-production.up.railway.app/"
+                  target="_blank"
+                  class="project-video-link"
+                >
+                  <video
+                    data-lazy="./assets/alpost.mp4"
+                    class="project-video"
+                    muted
+                    autoplay
+                    loop
+                  ></video>
+                  <div class="video-hover">
+                    <h2>See Website</h2>
+                  </div>
+                </a>
+              </div>
             </div>
-          </a>
+            <div class="monitor-stand">
+              <div class="monitor-stand-vertical"></div>
+              <div class="monitor-stand-horizontal"></div>
+            </div>
+          </div>
         </div>
         <!-- PROJECT 2 -->
         <div class="project">
@@ -197,22 +218,32 @@
               NODE.JS | EXPRESS | MONGODB/MONGOOSE | EJS | CSS
             </h6>
           </div>
-          <a
-            href="https://musicalia-.glitch.me/"
-            target="_blank"
-            class="project-vid"
-          >
-            <video
-              class="vid-1"
-              muted
-              autoplay
-              loop
-              src="./assets/musicalia.mp4"
-            ></video>
-            <div class="video-hover">
-              <h2>See Website</h2>
+          <div class="monitor">
+            <div class="monitor-frame">
+              <div class="monitor-screen">
+                <a
+                  href="https://musicalia-.glitch.me/"
+                  target="_blank"
+                  class="project-video-link"
+                >
+                  <video
+                    data-lazy="./assets/musicalia.mp4"
+                    class="project-video"
+                    muted
+                    autoplay
+                    loop
+                  ></video>
+                  <div class="video-hover">
+                    <h2>See Website</h2>
+                  </div>
+                </a>
+              </div>
             </div>
-          </a>
+            <div class="monitor-stand">
+              <div class="monitor-stand-vertical"></div>
+              <div class="monitor-stand-horizontal"></div>
+            </div>
+          </div>
         </div>
         <!-- PROJECT 1 -->
         <div class="project">
@@ -236,23 +267,32 @@
             </p>
             <h6 class="h6 programs">HTML | SCSS | JAVASCRYPT</h6>
           </div>
-
-          <a
-            href="https://x-com-clone.glitch.me/"
-            target="_blank"
-            class="project-vid"
-          >
-            <video
-              class="vid-1"
-              muted
-              autoplay
-              loop
-              src="./assets/x_kom_clone.mp4"
-            ></video>
-            <div class="video-hover">
-              <h2>See Website</h2>
+          <div class="monitor">
+            <div class="monitor-frame">
+              <div class="monitor-screen">
+                <a
+                  href="https://x-com-clone.glitch.me/"
+                  target="_blank"
+                  class="project-video-link"
+                >
+                  <video
+                    data-lazy="./assets/x_kom_clone.mp4"
+                    class="project-video"
+                    muted
+                    autoplay
+                    loop
+                  ></video>
+                  <div class="video-hover">
+                    <h2>See Website</h2>
+                  </div>
+                </a>
+              </div>
             </div>
-          </a>
+            <div class="monitor-stand">
+              <div class="monitor-stand-vertical"></div>
+              <div class="monitor-stand-horizontal"></div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -273,12 +313,10 @@
               ></a>
             </div>
             <div class="task-features">
-              <h6 class="h6 features">> REACT</h6>
-              <h6 class="h6 features">> TypeScript</h6>
-              <h6 class="h6 features">> News API</h6>
+              <h6 class="h6 features">> REACT, TypeScript</h6>
+              <h6 class="h6 features">> News API, i18next</h6>
               <h6 class="h6 features">> Redux ToolKit</h6>
-              <h6 class="h6 features">> react-router-dom</h6>
-              <h6 class="h6 features">> react-testing-library</h6>
+              <h6 class="h6 features">> react-router, react-testing-lin</h6>
               <h6 class="h6 features">> i18next, translator lib.</h6>
             </div>
 
@@ -352,7 +390,7 @@
       <!-- BLOG -->
 
       <section id="blog">
-        <h2 class="h2">Blog</h2>
+        <h2 class="h2 section-title">Blog</h2>
         <h4 class="h4">
           This website was made mainly for getting to know WordPress, but ended
           being a writing/english practice too.
@@ -379,17 +417,21 @@
           <h4 class="h4 if">if</h4>
           <h4 class="h4">
             <strong class="orange">(</strong>
-            You're curious about my design skills,
+            You're curious about my design skills
             <strong class="orange">)</strong>
             <strong class="accent">{</strong>
           </h4>
         </div>
         <div class="then">
           <h4 class="h4">then definitely check my</h4>
-          <h2 class="h2">Architecture Portfolio</h2>
+          <h2 class="h2 section-title">Architecture Portfolio</h2>
           <h4 class="h4"><strong class="accent">}</strong></h4>
         </div>
-        <a href="./assets//Portfolio_ARCH.pdf" target="_blank">
+        <a
+          class="arch-images-container"
+          href="./assets//Portfolio_ARCH.pdf"
+          target="_blank"
+        >
           <div class="arch-images">
             <div class="arch-img arch-img1"></div>
             <div class="arch-img arch-img2"></div>
@@ -400,26 +442,24 @@
             <div class="arch-img arch-img7"></div>
             <div class="arch-img arch-img8"></div>
           </div>
-          <div class="check-pdf">
-            <h3 class="h3">OPEN PDF</h3>
-          </div>
+          <button class="h3 arch-images-btn">open pdf</button>
         </a>
       </section>
 
       <!-- CV -->
 
       <section id="cv">
-        <h2 class="h2 cv-title">CV</h2>
+        <h2 class="h2 section-title">CV</h2>
         <a
           href="./assets/CV_Piotr_Górski_pl_noTel.pdf"
           target="_blank"
-          class="btn"
+          class="btn cv-btn-1"
           >CV - polish</a
         >
         <a
           href="./assets/CV_Piotr_Górski_eng_noTel.pdf"
           target="_blank"
-          class="btn cv-btn"
+          class="btn cv-btn-2"
           >CV - english</a
         >
       </section>
@@ -429,12 +469,12 @@
       <section id="about-me">
         <div class="about-me-content">
           <div class="left-col">
-            <h2 class="h2">About Me</h2>
+            <h2 class="h2 section-title">About Me</h2>
             <p class="about-me-text">
-              My name is Piotr Górski, graduated architect currently working
-              with everything around web dev.
+              My name is Piotr Górski, graduated architect currently working on
+              everything around web dev.
             </p>
-            <a href="./more-about-me.html" class="btn about-me-btn"
+            <a href="./more_about_me.html" class="btn about-me-btn"
               >Read More</a
             >
           </div>
@@ -446,7 +486,7 @@
       <!-- CONTACT -->
 
       <section id="contact">
-        <h2 class="h2">Contact</h2>
+        <h2 class="h2 section-title">Contact</h2>
         <form
           id="form"
           class="form"

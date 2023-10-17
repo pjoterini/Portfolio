@@ -34,17 +34,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'PiotrGórski',
       filename: 'index.html',
-      template: 'src/template.html'
+      template: 'src/index.html'
     }),
     new HtmlWebpackPlugin({
       title: 'PiotrGórski',
-      filename: 'thankyou.html',
-      template: 'src/pages/thankyou.html'
+      filename: 'thank_you.html',
+      template: 'src/pages/thank_you.html'
     }),
     new HtmlWebpackPlugin({
       title: 'PiotrGórski',
-      filename: 'more-about-me.html',
-      template: 'src/pages/more-about-me.html'
+      filename: 'more_about_me.html',
+      template: 'src/pages/more_about_me.html'
     })
   ],
   devServer: {

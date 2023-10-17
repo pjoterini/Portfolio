@@ -1,27 +1,21 @@
 #cv {
   width: 100%;
-  margin: 30rem auto 8rem auto;
-  padding-top: 10rem;
+  margin-top: 35rem;
 }
 
-.cv-btn {
-  margin-left: 2rem;
+.cv-btn-1 {
   margin-top: 3rem;
+  margin-right: 2rem;
 }
 
 /* 720px ////////////////////// */
 
 @media (max-width: 720px) {
   #cv {
-    margin-top: 35rem;
-    margin-bottom: 7rem;
+    margin-top: 40rem;
   }
 
-  .cv-title {
-    margin-bottom: 2rem;
-  }
-
-  .cv-btn {
-    margin-left: 0;
+  .cv-btn-2 {
+    margin-top: 2rem;
   }
 }

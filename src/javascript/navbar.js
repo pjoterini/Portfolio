@@ -1,21 +1,22 @@
 const navbar = () => {
-  const burgerBtnOpen = document.querySelector(".burger-btn-open");
-  const burgerBtnClose = document.querySelector(".burger-btn-close");
-  const navLinksUl = document.querySelector(".nav-links-ul");
+  const burgerBtnOpen = document.querySelector('.burger-btn-open')
+  const burgerBtnClose = document.querySelector('.burger-btn-close')
+  const burgerMenu = document.querySelector('.burger-menu')
+  const navLinksBurger = document.querySelector('.nav-links-burger')
 
   if (burgerBtnOpen) {
-    burgerBtnOpen.addEventListener("click", () => {
-      burgerBtnOpen.classList.add("display-none");
-      burgerBtnClose.classList.remove("display-none");
-      navLinksUl.classList.remove("display-none");
-    });
+    burgerBtnOpen.addEventListener('click', () => {
+      burgerBtnOpen.classList.add('hide')
+      burgerBtnClose.classList.remove('hide')
+      navLinksBurger.classList.remove('hide')
+    })
 
-    burgerBtnClose.addEventListener("click", () => {
-      burgerBtnClose.classList.add("display-none");
-      burgerBtnOpen.classList.remove("display-none");
-      navLinksUl.classList.add("display-none");
-    });
+    burgerBtnClose.addEventListener('click', () => {
+      burgerBtnClose.classList.add('hide')
+      burgerBtnOpen.classList.remove('hide')
+      navLinksBurger.classList.add('hide')
+    })
   }
-};
+}
 
-export default navbar;
+export default navbar

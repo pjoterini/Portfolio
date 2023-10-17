@@ -6,7 +6,14 @@
   position: absolute;
   border: 2px solid $white;
   border-radius: 50%;
+  box-shadow: none;
+  opacity: 0.15;
+
+  transition-property: opacity, box-shadow, top, transform;
+  transition-duration: 2000ms;
+  transition-timing-function: ease-in-out;
 }
+
 .star1 {
   left: 10vw;
   top: 40vh;
@@ -91,46 +98,25 @@
 .l {
   height: 25px;
   width: 25px;
-  opacity: 0.4;
 }
 .m {
   height: 15px;
   width: 15px;
-  opacity: 0.3;
 }
 .s {
   height: 8px;
   width: 8px;
-  opacity: 0.25;
 }
 
 .spark {
   -webkit-box-shadow: 10px 17px 70px 37px $accent-color;
   -moz-box-shadow: 10px 17px 70px 37px $accent-color;
   box-shadow: 0px 0px 50px 15px $accent-color;
+  opacity: 0.4;
 
-  transition: 1500ms all ease-in-out;
-}
-.no-spark {
-  box-shadow: none;
-  opacity: 0.1;
-
-  transition: 2000ms all ease-in-out;
-}
-
-.spark-moon {
-  -webkit-box-shadow: 10px 17px 70px 37px $accent-color;
-  -moz-box-shadow: 10px 17px 70px 37px $accent-color;
-  box-shadow: -5px -3px 50px 1px $accent-color;
-
-  transition: 2500ms all ease-in-out;
-  opacity: 1;
-}
-
-.no-spark-moon {
-  box-shadow: none;
-  transition: 3000ms all ease-in-out;
-  opacity: 0.7;
+  transition-property: opacity, box-shadow, transform, top;
+  transition-duration: 2000ms;
+  transition-timing-function: ease-in-out;
 }
 
 .moon {
@@ -141,12 +127,31 @@
   background-color: rgb(177, 177, 177);
   border-right: 55px solid gray;
   transform: rotate(30deg);
+  opacity: 0.7;
+
+  transition-property: opacity, box-shadow;
+  transition-duration: 3500ms;
+  transition-timing-function: ease-in-out;
 }
 
-.moon::before {
+.spark-moon {
+  -webkit-box-shadow: 10px 17px 70px 37px $accent-color;
+  -moz-box-shadow: 10px 17px 70px 37px $accent-color;
+  box-shadow: -5px -3px 50px 1px $accent-color;
+  opacity: 1;
+
+  transition-property: opacity, box-shadow;
+  transition-duration: 3500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.moon-hole {
+  display: block;
+}
+
+.moon-hole-1 {
   top: 40px;
   left: 70px;
-  content: '';
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -156,10 +161,9 @@
   border-right: solid 7px rgb(85, 85, 85);
   transform: rotate(190deg);
 }
-.moon::after {
+.moon-hole-2 {
   top: 180px;
   left: 90px;
-  content: '';
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -170,7 +174,7 @@
   transform: rotate(190deg);
 }
 
-.moon-holes1 {
+.moon-hole-3 {
   top: 120px;
   left: 20px;
   width: 30px;
@@ -182,7 +186,7 @@
   border-right: solid 5px rgb(94, 94, 94);
   transform: rotate(190deg);
 }
-.moon-holes2 {
+.moon-hole-4 {
   top: 50px;
   left: 200px;
   width: 20px;
@@ -194,7 +198,7 @@
   border-right: solid 3px rgb(58, 58, 58);
   transform: rotate(190deg);
 }
-.moon-holes3 {
+.moon-hole-5 {
   top: 150px;
   left: 210px;
   width: 15px;
@@ -206,7 +210,7 @@
   border-right: solid 2px rgb(66, 66, 66);
   transform: rotate(190deg);
 }
-.moon-holes4 {
+.moon-hole-6 {
   top: 110px;
   left: 160px;
   width: 18px;
@@ -222,5 +226,21 @@
 @media (max-width: 1440px) {
   .star {
     transform: scale(0.7);
+  }
+}
+
+/* 1024px /////////////////////////// */
+
+@media (max-width: 1024px) {
+  .moon {
+    transform: scale(0.7) rotate(30deg);
+  }
+}
+
+/* 770px /////////////////////////// */
+
+@media (max-width: 770px) {
+  .moon {
+    display: none;
   }
 }

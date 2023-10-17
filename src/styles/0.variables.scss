@@ -2,6 +2,7 @@
   --primary-color: #211337;
   --secondary-color: #ffd698;
   --accent-color: #44cead;
+  --accent-color-transparent: #44ceae9f;
   --error-color: #f1316e;
   --white: #fff;
   --gray: rgb(157, 157, 157);
@@ -12,6 +13,7 @@
 $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
 $accent-color: var(--accent-color);
+$accent-color-transparent: var(--accent-color-transparent);
 $error-color: var(--error-color);
 $white: var(--white);
 $gray: var(--gray);
@@ -34,19 +36,30 @@ $transition2: var(--transition2);
   font-weight: 900;
   font-size: 4.5rem;
 }
+
 .h2 {
+  opacity: 0;
+  transition-duration: 2000ms;
+  transition-property: opacity transform;
+  transition-timing-function: ease-in;
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 3.2rem;
 }
+.section-title-show {
+  opacity: 1;
+}
+
 .h3 {
   font-weight: 300;
   font-size: 1.8rem;
 }
+
 .h4 {
   font-size: 2rem;
   font-weight: 700;
 }
+
 .h6 {
   font-size: 18px;
   text-transform: uppercase;
@@ -68,11 +81,21 @@ a {
 
 .fade-text {
   color: $white;
-  opacity: 0.3;
+  opacity: 0.4;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
 }
 
 .error {
   color: $error-color;
+}
+
+@media (max-width: 720px) {
+  .h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    line-height: 1.6;
+  }
 }

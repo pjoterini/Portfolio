@@ -1,6 +1,6 @@
 .main {
+  margin-top: 2rem;
   width: 100%;
-  margin-top: 16rem;
   display: grid;
   grid-template-columns: 60% 40%;
 }
@@ -28,7 +28,9 @@
 }
 
 .contact-btn {
+  width: fit-content;
   margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .main-right {
@@ -37,28 +39,11 @@
   align-items: center;
 }
 
-/* 1024px /////////////////////////// */
-
-@media (max-width: 1024px) {
-  .moon {
-    transform: scale(0.75);
-  }
-
-  .main {
-    margin-top: 8rem;
-  }
-}
-
-/* 720px ////////////////////// */
+/* 720px /////////////////////////// */
 
 @media (max-width: 720px) {
   .main {
-    margin-top: 6rem;
     grid-template-columns: 1fr;
-  }
-
-  .moon {
-    display: none;
   }
 
   .projects-preview {

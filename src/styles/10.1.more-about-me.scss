@@ -1,0 +1,89 @@
+#more-about-me {
+  margin: 0 auto 5rem auto;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+}
+
+#more-about-me .section-title {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.monologue {
+  color: $white;
+  padding-bottom: 1.5rem;
+}
+
+.vertical-pictures-container {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+.pic-vertical {
+  height: 400px;
+  width: 100%;
+  background-color: $primary-color;
+}
+
+.pic-horizontal {
+  height: 220px;
+  width: 100%;
+  background-color: $primary-color;
+  margin-bottom: 1.5rem;
+}
+
+.bg {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.kot {
+  background-image: url(./assets/kot.jpg);
+}
+.hala {
+  background-image: url(./assets/hala.jpeg);
+}
+.dyplom {
+  background-image: url(./assets/dyplom.jpg);
+}
+.magistera {
+  background-image: url(./assets/magistera.jpg);
+}
+.kot2 {
+  background-image: url(./assets/kot2.jpg);
+}
+.plaza {
+  background-image: url(./assets/plaza.jpg);
+}
+
+@media (max-width: 720px) {
+  #more-about-me {
+    margin-bottom: 3rem;
+    max-width: 300px;
+  }
+
+  #more-about-me .section-title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .pic-vertical {
+    height: 300px;
+    width: 100%;
+    background-color: $primary-color;
+  }
+
+  .pic-horizontal {
+    height: 150px;
+    width: 100%;
+    background-color: $primary-color;
+    margin-bottom: 1.5rem;
+  }
+}

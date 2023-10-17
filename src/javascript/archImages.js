@@ -1,47 +1,57 @@
 const archImages = () => {
-  let archImages = document.querySelector(".arch-images");
+  let archImages = document.querySelector('.arch-images')
   if (archImages) {
-    let maxRight = -415;
-    let speedX = 0.4;
-    let positionX = -415;
+    const archImagesBtn = document.querySelector('.arch-images-btn')
+    const screenWidth = window.screen.width
+    const archImagesWidth = 4076.75
+    const endPosition = archImagesWidth - screenWidth
+    const frequency = 20 // Higher number means less fluid animation
+    let maxRight = 5
+    let positionX = 1
+    let appendedPixels = 2
 
-    if (window.screen.width < 1024) {
-      let pdfBtn = document.querySelector(".check-pdf");
-      pdfBtn.classList.add("check-pdf-hover");
+    const startCarousel = () => {
+      positionX = positionX + appendedPixels
 
-      const myInterval = setInterval(() => {
-        positionX = positionX + speedX;
-        if (positionX > maxRight || positionX < -2480) {
-          speedX = speedX * -1;
-        }
-        archImages.style.left = positionX + "px";
-
-        archImages.addEventListener("mouseleave", (e) => {
-          clearInterval(myInterval);
-          pdfBtn.classList.remove("check-pdf-hover");
-        });
-      }, 1000 / 250);
+      if (positionX > maxRight || positionX < -endPosition) {
+        appendedPixels = appendedPixels * -1
+      }
+      archImages.style.left = positionX + 'px'
     }
-    if (window.screen.width >= 1024) {
-      archImages.addEventListener("mouseenter", (e) => {
-        let pdfBtn = document.querySelector(".check-pdf");
-        pdfBtn.classList.add("check-pdf-hover");
 
-        const myInterval = setInterval(() => {
-          positionX = positionX + speedX;
-          if (positionX > maxRight || positionX < -2480) {
-            speedX = speedX * -1;
-          }
-          archImages.style.left = positionX + "px";
+    const showButton = () => archImagesBtn.classList.add('arch-images-btn-show')
+    const hideButton = () =>
+      archImagesBtn.classList.remove('arch-images-btn-show')
 
-          archImages.addEventListener("mouseleave", (e) => {
-            clearInterval(myInterval);
-            pdfBtn.classList.remove("check-pdf-hover");
-          });
-        }, 1000 / 250);
-      });
+    // MOBILE
+    if (screenWidth < 1024) {
+      showButton()
+
+      const archImagesCarouselMobile = setInterval(() => {
+        startCarousel()
+      }, frequency)
+
+      archImages.addEventListener('click', () => {
+        clearInterval(archImagesCarouselMobile)
+      })
+    }
+
+    // DESKTOP
+    if (screenWidth >= 1024) {
+      archImages.addEventListener('mouseenter', (e) => {
+        showButton()
+
+        const archImagesCarouselDesktop = setInterval(() => {
+          startCarousel()
+        }, frequency)
+
+        archImages.addEventListener('mouseleave', () => {
+          clearInterval(archImagesCarouselDesktop)
+          hideButton()
+        })
+      })
     }
   }
-};
+}
 
-export default archImages;
+export default archImages
