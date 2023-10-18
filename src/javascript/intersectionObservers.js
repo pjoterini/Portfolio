@@ -2,6 +2,7 @@ const intersectionObservers = () => {
   const projectVideoLinks = document.querySelectorAll('.project-video-link')
   const sectionTitles = document.querySelectorAll('.section-title')
 
+  // PROJECT VIDEOS
   const projectVideoLinkObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -23,7 +24,7 @@ const intersectionObservers = () => {
       threshold: 0.6
     }
   )
-
+  // SECTION TITLES
   projectVideoLinks.forEach((projectVideo) => {
     projectVideoLinkObserver.observe(projectVideo)
   })
@@ -41,7 +42,6 @@ const intersectionObservers = () => {
       threshold: 1
     }
   )
-
   sectionTitles.forEach((sectionTitle) => {
     sectionTitleObserver.observe(sectionTitle)
   })

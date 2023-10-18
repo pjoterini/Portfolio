@@ -89,10 +89,22 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
+/* 1024px ////////////////////// */
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 13px;
+  }
+}
+
 /* 760px ////////////////////// */
 
 @media (max-width: 720px) {
   :root {
     font-size: 11px;
+  }
+
+  .container {
+    width: 90%;
   }
 }
