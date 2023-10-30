@@ -8,14 +8,12 @@ const intersectionObservers = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           const projectVideoLink = entry.target
-          const projectVideo = entry.target.firstElementChild
-          const src = projectVideo.getAttribute('data-lazy')
 
           projectVideoLink.classList.add(
             'project-link-video-show',
             entry.isIntersecting
           )
-          projectVideo.setAttribute('src', src)
+
           projectVideoLinkObserver.unobserve(projectVideoLink)
         }
       })

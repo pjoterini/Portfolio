@@ -35,7 +35,6 @@ const colorTheme = () => {
           '10px 17px 70px 37px $accent-color'
         )
         moon.style.setProperty('box-shadow', '-5px -3px 50px 1px white')
-        console.log('hmm')
       }
 
       // STARS
