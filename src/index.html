@@ -137,11 +137,124 @@
 
       <section id="projects">
         <h2 class="h2 section-title">Projects</h2>
+        <h4 class="h4 projects-type projects-type-1">Commercial</h4>
+        <!-- ALPINE FESTIVAL -->
+        <div class="project">
+          <div class="project-info">
+            <div class="project-info-upper-section">
+              <a href="https://github.com/pjoterini/AlpineFestival">
+                <h4 class="h4">
+                  Alpine Festival - Guest registration, Admin panel
+                </h4>
+              </a>
+              <a
+                class="projects-git-link"
+                href="https://github.com/pjoterini/AlpineFestival"
+                target="_blank"
+                ><i class="fa-brands fa-github fa-2x"></i
+              ></a>
+            </div>
+            <p class="project-text">
+              This project is meant to help organizers with guest registration
+              and storing/editing data of both mentioned above.
+            </p>
+            <p class="project-text">
+              Application is aimed to be used in 2024 edition.
+            </p>
+            <h6 class="h6 programs">
+              NEXT.JS | TYPESCRIPT | MATERIAL-UI | FORMIK | YUP | DAYJS |
+              REACT-TEL-INPUT-2 REDUX | FIREBASE | CLOUD FUNCTIONS | i18NEXT
+            </h6>
+          </div>
+          <div class="monitor">
+            <div class="monitor-frame">
+              <div class="monitor-screen">
+                <a
+                  href="https://github.com/pjoterini/AlpineFestival"
+                  target="_blank"
+                  class="project-video-link"
+                >
+                  <video
+                    src="./assets/alpine_festival.mp4"
+                    class="project-video"
+                    muted
+                    autoplay
+                    loop
+                  ></video>
+                  <div class="video-hover">
+                    <h2>See Website</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="monitor-stand">
+              <div class="monitor-stand-vertical"></div>
+              <div class="monitor-stand-horizontal"></div>
+            </div>
+          </div>
+        </div>
+        <div class="commercial-project-views">
+          <div class="commercial-project-view">
+            <p class="commercial-project-view-heading">main page</p>
+            <p class="commercial-project-view-text">
+              includes form for guests to register. Forms are managed with
+              formik and yup(frontend validation). Backend validation stored in
+              Firebase rules.
+            </p>
+            <p class="commercial-project-view-text">
+              Dayjs and react-phone-number-2 libraries were used for dates and
+              international phone numbers formatting.
+            </p>
+            <img
+              class="commercial-project-view-img"
+              src="./assets/alpine_festival_img_1.jpg"
+              alt="alpine festival app guest registration view"
+            />
+          </div>
+          <div class="commercial-project-view">
+            <p class="commercial-project-view-heading">user/organizer panel</p>
+            <p class="commercial-project-view-text">
+              can be accessed by authenticated users. AUTH is managed with just
+              email and password for now, because adding other forms of auth may
+              result in unnecessary complexity.
+            </p>
+            <p class="commercial-project-view-text">
+              All Data is stored in Firebase Realtime Database. User can perform
+              every CRUD operation on stored guests.
+            </p>
+            <img
+              class="commercial-project-view-img"
+              src="./assets/alpine_festival_img_2.jpg"
+              l
+              alt="alpine festival app guest table"
+            />
+          </div>
+          <div class="commercial-project-view">
+            <p class="commercial-project-view-heading">admin actions</p>
+            <p class="commercial-project-view-text">
+              are to be executed by authorized users. Node.js enviornment was
+              needed to give users admin custom claims which allow them to
+              perform CRUD actions on other users.
+            </p>
+            <p class="commercial-project-view-text">
+              All of the above are handled with Google Cloud Functions.
+            </p>
+            <img
+              class="commercial-project-view-img"
+              src="./assets/alpine_festival_img_3.jpg"
+              alt="alpine festival app users table"
+            />
+          </div>
+        </div>
+        <h4 class="h4 projects-type">Hobby / Practice</h4>
         <!-- PROJECT 3 -->
         <div class="project">
           <div class="project-info">
             <div class="project-info-upper-section">
-              <a href="https://alpost-frontend-production.up.railway.app/">
+              <a
+                href="https://github.com/pjoterini/ALpost-frontend"
+                target="_blank"
+              >
                 <h4 class="h4">Alpost</h4>
               </a>
               <a
@@ -167,7 +280,7 @@
             <div class="monitor-frame">
               <div class="monitor-screen">
                 <a
-                  href="https://alpost-frontend-production.up.railway.app/"
+                  href="https://github.com/pjoterini/ALpost-frontend"
                   target="_blank"
                   class="project-video-link"
                 >
@@ -424,7 +537,7 @@
         </div>
         <a
           class="arch-images-container"
-          href="./assets//Portfolio_ARCH.pdf"
+          href="./assets/Portfolio_ARCH.pdf"
           target="_blank"
         >
           <div class="arch-images">

@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = merge(common, {
   mode: 'production',
   output: {
-    assetModuleFilename: 'assets/[name].[hash][ext]',
+    assetModuleFilename: 'assets/[name][ext]',
     clean: true
   },
   module: {
