@@ -47,13 +47,15 @@
 }
 
 .task-img {
-  height: 340px;
   width: 100%;
-  object-fit: cover;
 }
 
-.contain {
-  object-fit: contain;
+/* 1440px /////////////////////////// */
+
+@media (max-width: 1440px) {
+  .task-img-link {
+    display: none;
+  }
 }
 
 /* 720px ////////////////////// */
@@ -85,9 +87,5 @@
   a.projects-git-link {
     margin: 0;
     padding: 0.5rem;
-  }
-
-  .task-img-link {
-    display: none;
   }
 }
