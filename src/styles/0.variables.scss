@@ -5,7 +5,7 @@
   --accent-color-transparent: #44ceae9f;
   --error-color: #f1316e;
   --white: #fff;
-  --gray: rgb(157, 157, 157);
+  --gray: #c5c5c5;
   --black: rgb(0, 0, 0);
   --transition1: 300ms all ease-in-out;
   --transition2: 600ms all ease-in-out;
@@ -80,8 +80,7 @@ a {
 }
 
 .fade-text {
-  color: $white;
-  opacity: 0.4;
+  color: $gray;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
 }

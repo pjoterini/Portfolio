@@ -16,6 +16,7 @@ const colorTheme = () => {
       root.style.setProperty('--accent-color-transparent', '#44ceae9f')
       root.style.setProperty('--white', '#fff')
       root.style.setProperty('--black', 'rgb(0, 0, 0)')
+      root.style.setProperty('--gray', '#c5c5c5')
 
       // COLOR MODE BUTTONS
       moonIcon.classList.add('active')
@@ -51,6 +52,7 @@ const colorTheme = () => {
       root.style.setProperty('--accent-color-transparent', '#ffd698')
       root.style.setProperty('--white', '#211337')
       root.style.setProperty('--black', '#211337')
+      root.style.setProperty('--gray', '#535353')
 
       // COLOR MODE BUTTONS
       moonIcon.classList.remove('active')
