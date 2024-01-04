@@ -57,6 +57,7 @@
 
 .nav-links {
   display: flex;
+  list-style: none;
 }
 
 .nav-links a {
@@ -72,6 +73,12 @@
 
 .nav-links a:hover {
   color: $accent-color;
+}
+
+.nav-links li {
+  transition: $transition1;
+}
+.nav-links li:hover {
   transform: scale(1.1);
 }
 
