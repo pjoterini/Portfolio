@@ -73,10 +73,18 @@
   margin-bottom: 2rem;
 }
 
+.fullstack-git-links {
+  display: flex;
+  margin-left: 1rem;
+}
+
 .projects-git-link {
+  display: flex;
+  flex-direction: column;
   margin-left: 2rem;
   color: $white;
   transform: scale(0.8);
+  text-align: center;
 }
 
 .projects-git-link:hover {

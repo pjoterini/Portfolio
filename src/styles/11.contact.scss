@@ -48,6 +48,14 @@ textarea {
   font-size: 18px;
 }
 
+.write-directly {
+  margin-top: 2rem;
+
+  a {
+    color: $white;
+  }
+}
+
 /* 1024px /////////////////////////// */
 
 @media (max-width: 1024px) {
