@@ -1,7 +1,9 @@
 # Personal Portfolio
 
-[Portfolio Site Link](https://piotrgorski.com)
+[Portfolio preview](https://piotrgorski.com)
 
 ## Description
 
-My personal portfolio made with HTML, CSS and vanilla JS.
+My personal portfolio made with HTML, SCSS and vanilla JS.
+
+Bundled with webpack.
