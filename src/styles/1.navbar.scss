@@ -1,6 +1,17 @@
 .main-nav {
-  width: 100%;
-  margin-top: 1rem;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background-color: $nav-bg;
+
+  z-index: 4;
+}
+
+.main-nav-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 80%;
+  padding: 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,7 +26,7 @@
 .logo-img {
   height: 80px;
   width: 80px;
-  margin-top: 0.5rem;
+  margin-left: 1rem;
   background-image: url(./assets/LOGO_white.png);
   background-position: center;
   background-size: cover;
@@ -28,9 +39,6 @@
 .color-mode {
   flex: 1;
   margin-left: 2rem;
-}
-
-.color-mode ul {
   display: flex;
 }
 
@@ -82,28 +90,16 @@
   transform: scale(1.1);
 }
 
-/* 1300px ////////////////////// */
-@media (max-width: 1300px) {
-  .main-nav {
-    flex-direction: column;
-  }
-
-  .nav-links {
-    margin-top: 2rem;
+/* 1440px ////////////////////// */
+@media (max-width: 1440px) {
+  .nav-links a {
+    padding: 0 0.75rem;
   }
 }
 
 /* 1024px ////////////////////// */
 
 @media (max-width: 1024px) {
-  .nav-links a {
-    padding: 0 1rem;
-  }
-}
-
-/* 720px ////////////////////// */
-
-@media (max-width: 720px) {
   .nav-links {
     display: none;
   }

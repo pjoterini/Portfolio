@@ -2,14 +2,31 @@
   background: linear-gradient(45deg, rgb(241, 222, 115), rgb(230, 139, 66));
   border-right: 0px;
 }
+
 .rain {
   background: linear-gradient(45deg, $secondary-color, rgb(74, 141, 180));
   border: none;
   opacity: 1;
-  transform: translateY(-100%) scaleY(0.3);
-  top: 100vh;
 
-  transition-property: opacity, box-shadow, transform, top;
-  transition-duration: 2500ms;
-  transition-timing-function: ease-in;
+  animation: toRain 7000ms ease-in forwards;
+}
+
+@keyframes toRain {
+  30% {
+    transform: scaleX(0.3) scaleY(1.2);
+  }
+
+  70% {
+    top: 99vh;
+    transform: translateY(-100%) scaleX(0.3) scaleY(1.2);
+  }
+
+  75% {
+    transform: translateY(-100%) scaleX(2) scaleY(0.8);
+  }
+
+  100% {
+    transform: translateY(-100%) scaleX(1.4) scaleY(0.3);
+    top: 99vh;
+  }
 }

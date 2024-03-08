@@ -1,7 +1,6 @@
 const navbar = () => {
   const burgerBtnOpen = document.querySelector('.burger-btn-open')
   const burgerBtnClose = document.querySelector('.burger-btn-close')
-  const burgerMenu = document.querySelector('.burger-menu')
   const navLinksBurger = document.querySelector('.nav-links-burger')
 
   if (burgerBtnOpen) {

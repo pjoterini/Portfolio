@@ -53,12 +53,11 @@ body::-webkit-scrollbar-thumb {
   background-color: $primary-color;
 }
 
-#main-view {
-  height: 100vh;
+#hero-section {
+  height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
 .btn {

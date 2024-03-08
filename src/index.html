@@ -43,73 +43,74 @@
       <div class="star star20 m"></div>
     </div>
 
-    <div class="container">
-      <!-- MAIN VIEW -->
-      <div id="main-view">
-        <!-- MAIN-NAV -->
-        <div class="main-nav">
-          <div class="logo-and-mode">
-            <div class="logo">
-              <a href="./index.html" aria-label="Page logo"
-                ><div class="logo-img"></div
-              ></a>
-            </div>
-            <div class="color-mode">
-              <ul class="color-mode-ul">
-                <li class="moon-icon active">
-                  <i class="fa-solid fa-moon"></i>
-                </li>
-                <li class="sun-icon"><i class="fa-solid fa-sun"></i></li>
-              </ul>
-            </div>
-          </div>
-          <!-- MOBILE NAV -->
-          <div class="burger-menu">
-            <div class="burger-btn-open">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="burger-btn-close hide">
-              <i class="fa-solid fa-x"></i>
-            </div>
-            <ul class="nav-links-burger hide">
-              <a href="#projects"><li>Projects</li></a>
-              <a href="#blog"><li>Blog</li></a>
-              <a href="#arch-portfolio"><li>Arch_portfolio</li></a>
-              <a href="#cv"><li>CV</li></a>
-              <a href="#about-me"><li>AboutMe</li></a>
-              <a href="#contact"><li>Contact</li></a>
-            </ul>
-          </div>
-          <!-- DESKTOP NAV -->
-          <ul class="nav-links">
-            <li>
-              <a href="#projects">Projects</a>
+    <!-- MAIN NAV -->
+    <div class="main-nav">
+      <div class="main-nav-container">
+        <!-- LOGO AND DARK MODE -->
+        <div class="logo-and-mode">
+          <a class="logo" href="./index.html" aria-label="Page logo"
+            ><div class="logo-img"></div
+          ></a>
+          <ul class="color-mode">
+            <li class="moon-icon active">
+              <i class="fa-solid fa-moon"></i>
             </li>
-            <li>
-              <a href="#blog">Blog</a>
-            </li>
-            <li>
-              <a href="#arch-portfolio">Arch_portfolio</a>
-            </li>
-            <li>
-              <a href="#cv">CV</a>
-            </li>
-            <li>
-              <a href="#about-me">AboutMe</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
+            <li class="sun-icon"><i class="fa-solid fa-sun"></i></li>
           </ul>
         </div>
-        <!-- MAIN-CONTENT -->
+        <!-- MOBILE NAV -->
+        <div class="burger-menu">
+          <div class="burger-btn-open">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="burger-btn-close hide">
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <ul class="nav-links-burger hide">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#arch-portfolio">Arch_portfolio</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- DESKTOP NAV -->
+        <ul class="nav-links">
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a href="#arch-portfolio">Arch_portfolio</a>
+          </li>
+          <li>
+            <a href="#cv">CV</a>
+          </li>
+          <li>
+            <a href="#about-me">About me</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- HERO SECTION -->
+      <div id="hero-section">
+        <!-- HERO CONTENT -->
         <main class="main">
           <div class="main-left">
-            <h1 class="h1">Hi, i'm Piotr</h1>
+            <h1>Hi, i'm Piotr</h1>
             <main class="main-text">
               <p class="main-text-1">Web Development</p>
               <p class="main-text-2">Frontend / Backend</p>
               <p class="main-text-2">UI / UX / graphic design</p>
+              <p class="main-text-2">HTML Email</p>
             </main>
             <a href="#contact" class="btn contact-btn">Get in touch</a>
           </div>
@@ -272,7 +273,7 @@
             />
           </div>
         </div>
-        <h4 class="h4 projects-type">Hobby / Practice</h4>
+        <h4 class="h4 projects-type">Personal</h4>
         <!-- PROJECT 3 -->
         <div class="project">
           <div class="project-info">
@@ -575,26 +576,52 @@
 
       <section id="blog">
         <h2 class="h2 section-title">Blog</h2>
-        <h4 class="h4">
-          This website was made mainly for getting to know WordPress, but ended
-          being a writing/english practice too.
-        </h4>
-        <h4 class="h4">"Outlook signature" post is actually very relevant.</h4>
-        <a class="blog-link" href="https://piotrgorski.blog" target="_blank">
-          <img
-            class="blog-preview-image"
-            src="./assets/blog.jpg"
-            alt="blog preview"
-            width="1200"
-            height="777"
-          />
-          <div class="blog-preview-hover">
-            <h2 class="blog-previw-hover-text">See Website</h2>
+        <div class="project">
+          <div class="project-info">
+            <div class="project-info-upper-section">
+              <a href="https://y-lap.vercel.app/">
+                <h4 class="h4">My Blog</h4>
+              </a>
+            </div>
+            <p class="project-text">
+              This website was made mainly for getting to know WordPress, but
+              ended being a writing/english practice too.
+            </p>
+            <p class="project-text">
+              "Outlook signature" post is actually very relevant.
+            </p>
+            <h6 class="h6 programs">WORDPRESS | HOSTINGER</h6>
           </div>
-        </a>
+          <div class="monitor">
+            <div class="monitor-frame">
+              <div class="monitor-screen">
+                <a
+                  href="https://piotrgorski.blog"
+                  target="_blank"
+                  class="project-video-link"
+                >
+                  <img
+                    class="blog-preview-image"
+                    src="./assets/blog.jpg"
+                    alt="blog preview"
+                    width="1200"
+                    height="777"
+                  />
+                  <div class="video-hover">
+                    <h2>See Blog</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="monitor-stand">
+              <div class="monitor-stand-vertical"></div>
+              <div class="monitor-stand-horizontal"></div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- ARCH PFOLIO -->
+      <!-- ARCH PORTFOLIO -->
 
       <section id="arch-portfolio">
         <div class="condition">

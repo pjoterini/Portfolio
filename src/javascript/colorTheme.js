@@ -7,6 +7,18 @@ const colorTheme = () => {
   const moonHoles = document.querySelectorAll('.moon-hole')
   const stars = document.querySelectorAll('.star')
 
+  const logoAndIcons = () => {
+    moonIcon.classList.toggle('active')
+    sunIcon.classList.toggle('active')
+    logoImg.classList.toggle('logo-img-light')
+  }
+
+  const starsToRain = () => {
+    stars.forEach((star) => {
+      star.classList.toggle('rain')
+    })
+  }
+
   if (moonIcon && sunIcon) {
     moonIcon.addEventListener('click', () => {
       // CHANGE ROOT COLORS
@@ -15,33 +27,25 @@ const colorTheme = () => {
       root.style.setProperty('--accent-color', '#44cead')
       root.style.setProperty('--accent-color-transparent', '#44ceae9f')
       root.style.setProperty('--white', '#fff')
-      root.style.setProperty('--black', 'rgb(0, 0, 0)')
+      root.style.setProperty('--black', '#000000')
       root.style.setProperty('--gray', '#c5c5c5')
-
-      // COLOR MODE BUTTONS
-      moonIcon.classList.add('active')
-      sunIcon.classList.remove('active')
-      logoImg.classList.remove('logo-img-light')
+      root.style.setProperty('--nav-bg', 'rgba(34, 20, 57, 0.849)')
 
       // MOON / SUN
-      if (moon) {
-        moon.classList.remove('sun')
-        moonHoles.forEach((hole) => hole.classList.remove('hide'))
-        moon.style.setProperty(
-          '-webkit-box-shadow',
-          '10px 17px 70px 37px $accent-color;'
-        )
-        moon.style.setProperty(
-          '-moz-box-shadow',
-          '10px 17px 70px 37px $accent-color'
-        )
-        moon.style.setProperty('box-shadow', '-5px -3px 50px 1px white')
-      }
+      moon.classList.remove('sun')
+      moonHoles.forEach((hole) => hole.classList.remove('hide'))
+      moon.style.setProperty(
+        '-webkit-box-shadow',
+        '10px 17px 70px 37px $accent-color;'
+      )
+      moon.style.setProperty(
+        '-moz-box-shadow',
+        '10px 17px 70px 37px $accent-color'
+      )
+      moon.style.setProperty('box-shadow', '-5px -3px 50px 1px white')
 
-      // STARS
-      stars.forEach((star) => {
-        star.classList.remove('rain')
-      })
+      logoAndIcons()
+      starsToRain()
     })
 
     sunIcon.addEventListener('click', () => {
@@ -53,34 +57,26 @@ const colorTheme = () => {
       root.style.setProperty('--white', '#211337')
       root.style.setProperty('--black', '#211337')
       root.style.setProperty('--gray', '#535353')
-
-      // COLOR MODE BUTTONS
-      moonIcon.classList.remove('active')
-      sunIcon.classList.add('active')
-      logoImg.classList.add('logo-img-light')
+      root.style.setProperty('--nav-bg', 'rgba(255, 255, 255, 0.849)')
 
       // MOON / SUN
-      if (moon) {
-        moon.classList.add('sun')
-        moonHoles.forEach((hole) => hole.classList.add('hide'))
-        moon.style.setProperty(
-          '-webkit-box-shadow',
-          '10px 17px 70px 37px rgb(254, 171, 88);'
-        )
-        moon.style.setProperty(
-          '-moz-box-shadow',
-          '10px 17px 70px 37px rgb(254, 171, 88)'
-        )
-        moon.style.setProperty(
-          'box-shadow',
-          '-5px -3px 500px 100px rgb(254, 171, 88)'
-        )
-      }
+      moon.classList.add('sun')
+      moonHoles.forEach((hole) => hole.classList.add('hide'))
+      moon.style.setProperty(
+        '-webkit-box-shadow',
+        '10px 17px 70px 37px rgb(254, 171, 88);'
+      )
+      moon.style.setProperty(
+        '-moz-box-shadow',
+        '10px 17px 70px 37px rgb(254, 171, 88)'
+      )
+      moon.style.setProperty(
+        'box-shadow',
+        '-5px -3px 500px 100px rgb(254, 171, 88)'
+      )
 
-      // STARS
-      stars.forEach((star) => {
-        star.classList.add('rain')
-      })
+      logoAndIcons()
+      starsToRain()
     })
   }
 }
