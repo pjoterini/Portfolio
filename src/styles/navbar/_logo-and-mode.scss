@@ -1,0 +1,55 @@
+@use '../variables' as *;
+
+.logo-and-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo-img {
+    height: 80px;
+    width: 80px;
+    background-image: url(./assets/LOGO_white.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .logo-img-light {
+    background-image: url(./assets/LOGO_black.png);
+  }
+
+  .color-mode {
+    flex: 1;
+    margin-left: 2rem;
+    display: flex;
+  }
+
+  .color-mode li {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+
+    border-radius: 50%;
+    color: $white;
+    display: flex;
+    cursor: pointer;
+    transition: $transition1;
+  }
+
+  .color-mode li.active {
+    -webkit-box-shadow: inset 0px 0px 0px 2px $accent-color;
+    -moz-box-shadow: inset 0px 0px 0px 2px $accent-color;
+    box-shadow: inset 0px 0px 0px 2px $accent-color;
+  }
+
+  .color-mode-ul {
+    margin-top: 0.5rem;
+  }
+}
+
+/* 1024px ////////////////////// */
+
+@media (max-width: 1024px) {
+  .logo-img,
+  .logo-img-light {
+    transform: scale(0.7);
+  }
+}

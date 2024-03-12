@@ -1,0 +1,63 @@
+@use '../variables' as *;
+
+.arch-images-container {
+  margin-top: 4rem;
+  height: 300px;
+
+  .arch-images {
+    position: absolute;
+    left: 0vw;
+    display: flex;
+
+    filter: grayscale(100%);
+    transition: filter 500ms ease-in-out;
+    overflow: hidden;
+  }
+  .arch-images:hover {
+    filter: grayscale(0%);
+  }
+
+  .arch-img {
+    width: 500px;
+    height: 300px;
+    margin: 0 0.3rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .arch-images-btn {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $primary-transparent;
+    pointer-events: none;
+    transition: $transition1;
+  }
+
+  .arch-img1 {
+    background-image: url(./assets/1.webp);
+  }
+  .arch-img2 {
+    background-image: url(./assets/2.webp);
+  }
+  .arch-img3 {
+    background-image: url(./assets/3.webp);
+  }
+  .arch-img4 {
+    background-image: url(./assets/4.webp);
+  }
+  .arch-img5 {
+    background-image: url(./assets/5.webp);
+  }
+  .arch-img6 {
+    background-image: url(./assets/6.webp);
+  }
+  .arch-img7 {
+    background-image: url(./assets/7.webp);
+  }
+  .arch-img8 {
+    background-image: url(./assets/8.webp);
+  }
+}

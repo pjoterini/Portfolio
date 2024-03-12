@@ -1,0 +1,55 @@
+@use './variables' as *;
+
+#footer {
+  padding-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-items a {
+  padding-right: 1.5rem;
+  color: $white;
+  transition: $transition1;
+}
+
+.footer-items a:hover {
+  color: $accent-color;
+}
+
+.copyright {
+  margin-left: 3rem;
+  color: $white;
+}
+
+.name {
+  margin-left: 1rem;
+  color: $white;
+}
+
+/* 1024px /////////////////////////// */
+
+@media (max-width: 1024px) {
+  .copytight {
+    margin-left: 0rem;
+  }
+
+  .name {
+    margin-left: 1rem;
+  }
+}
+
+/* 720px ////////////////////// */
+
+@media (max-width: 720px) {
+  #footer {
+    padding-bottom: 2rem;
+  }
+}

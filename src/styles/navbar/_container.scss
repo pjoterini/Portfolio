@@ -1,0 +1,35 @@
+@use '../variables' as *;
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  padding: 1rem 0;
+  height: 10vh;
+  width: 100vw;
+  background-color: $primary-transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 4;
+
+  .main-nav-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* 720px ////////////////////// */
+
+@media (max-width: 720px) {
+  .main-nav {
+    .main-nav-container {
+      width: 90%;
+    }
+  }
+}

@@ -29,7 +29,7 @@ const colorTheme = () => {
       root.style.setProperty('--white', '#fff')
       root.style.setProperty('--black', '#000000')
       root.style.setProperty('--gray', '#c5c5c5')
-      root.style.setProperty('--nav-bg', 'rgba(34, 20, 57, 0.849)')
+      root.style.setProperty('--primary-transparent', 'rgba(34, 20, 57, 0.849)')
 
       // MOON / SUN
       moon.classList.remove('sun')
@@ -57,7 +57,10 @@ const colorTheme = () => {
       root.style.setProperty('--white', '#211337')
       root.style.setProperty('--black', '#211337')
       root.style.setProperty('--gray', '#535353')
-      root.style.setProperty('--nav-bg', 'rgba(255, 255, 255, 0.849)')
+      root.style.setProperty(
+        '--primary-transparent',
+        'rgba(255, 255, 255, 0.849)'
+      )
 
       // MOON / SUN
       moon.classList.add('sun')

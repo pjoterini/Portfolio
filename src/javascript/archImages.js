@@ -1,9 +1,10 @@
 const archImages = () => {
-  let archImages = document.querySelector('.arch-images')
+  const archImages = document.querySelector('.arch-images')
+  const archImagesBtn = document.querySelector('.arch-images-btn')
+
   if (archImages) {
-    const archImagesBtn = document.querySelector('.arch-images-btn')
     const screenWidth = window.screen.width
-    const archImagesWidth = 4076.75
+    const archImagesWidth = 4500
     const endPosition = archImagesWidth - screenWidth
     const frequency = 20 // Higher number means less fluid animation
     let maxRight = 5
@@ -19,9 +20,8 @@ const archImages = () => {
       archImages.style.left = positionX + 'px'
     }
 
-    const showButton = () => archImagesBtn.classList.add('arch-images-btn-show')
-    const hideButton = () =>
-      archImagesBtn.classList.remove('arch-images-btn-show')
+    const showButton = () => archImagesBtn.classList.remove('hide')
+    const hideButton = () => archImagesBtn.classList.add('hide')
 
     // MOBILE
     if (screenWidth < 1024) {

@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
-@import './styles/0.variables.scss';
-@import './styles/1.navbar.scss';
-@import './styles/1.1.burger-menu.scss';
-@import './styles/2.main.scss';
-@import './styles/3.1.space-background.scss';
-@import './styles/3.space-background-light-mode.scss';
-@import './styles/4.arrows.scss';
-@import './styles/5.projects.scss';
-@import './styles/6.interview-tasks.scss';
-@import './styles/7.blog.scss';
-@import './styles/8.arch-portfolio.scss';
-@import './styles/9.cv.scss';
-@import './styles/10.1.more-about-me.scss';
-@import './styles/10.about-me.scss';
-@import './styles/11.contact.scss';
-@import './styles/12.footer.scss';
-@import './styles/13.thank-you-site.scss';
-@import './styles/14.waves.scss';
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
+@use './styles/variables' as *;
+
+@use './styles/variables';
+@use './styles/navbar';
+@use './styles/hero';
+@use './styles/space-background.scss';
+@use './styles/space-background-light-mode.scss';
+@use './styles/projects.scss';
+@use './styles/blog.scss';
+@use './styles/arch-portfolio';
+@use './styles/cv.scss';
+@use './styles/more-about-me.scss';
+@use './styles/about-me.scss';
+@use './styles/contact.scss';
+@use './styles/footer.scss';
+@use './styles/thank-you-site.scss';
+@use './styles/waves.scss';
 
 *,
 *::after,
@@ -27,9 +26,12 @@
   padding: 0;
 }
 
+:root {
+  font-size: 18px;
+}
+
 body {
   position: relative;
-  font-size: 18px;
   background-color: $primary-color;
   z-index: -3;
   font-family: 'Montserrat', sans-serif;
@@ -40,7 +42,7 @@ body::-webkit-scrollbar {
   width: 0.7rem;
 }
 body::-webkit-scrollbar-track {
-  background: $white;
+  background: $primary-color;
 }
 body::-webkit-scrollbar-thumb {
   background: $gray;
@@ -53,11 +55,13 @@ body::-webkit-scrollbar-thumb {
   background-color: $primary-color;
 }
 
-#hero-section {
-  height: 85vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ul {
+  list-style: none;
+}
+
+section {
+  padding-top: 6rem;
+  width: 100%;
 }
 
 .btn {
@@ -74,6 +78,7 @@ body::-webkit-scrollbar-thumb {
   box-shadow: inset 0px 0px 0px 2px $accent-color;
   cursor: pointer;
 }
+
 .btn:hover {
   color: $primary-color;
   background-color: $accent-color;
@@ -92,7 +97,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 1024px) {
   :root {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
@@ -100,7 +105,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 720px) {
   :root {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .container {

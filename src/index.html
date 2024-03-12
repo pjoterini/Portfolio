@@ -60,11 +60,8 @@
         </div>
         <!-- MOBILE NAV -->
         <div class="burger-menu">
-          <div class="burger-btn-open">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-          <div class="burger-btn-close hide">
-            <i class="fa-solid fa-x"></i>
+          <div class="burger-btn">
+            <i class="burger-icon fa-solid fa-bars"></i>
           </div>
           <ul class="nav-links-burger hide">
             <li><a href="#projects">Projects</a></li>
@@ -107,10 +104,10 @@
           <div class="main-left">
             <h1>Hi, i'm Piotr</h1>
             <main class="main-text">
-              <p class="main-text-1">Web Development</p>
-              <p class="main-text-2">Frontend / Backend</p>
-              <p class="main-text-2">UI / UX / graphic design</p>
-              <p class="main-text-2">HTML Email</p>
+              <p class="text-1">Web Development</p>
+              <p class="text-1 secondary">Frontend / Backend</p>
+              <p class="text-1 secondary">UI / UX / graphic design</p>
+              <p class="text-1 secondary">HTML Email</p>
             </main>
             <a href="#contact" class="btn contact-btn">Get in touch</a>
           </div>
@@ -123,13 +120,7 @@
               <div class="moon-hole moon-hole-5"></div>
               <div class="moon-hole moon-hole-6"></div>
             </div>
-          </div>
-        </main>
-        <!-- ARROWS -->
-        <div class="projects-preview">
-          <div class="preview">
             <div class="lighthouse-container">
-              <p>Lighthouse desktop report for this site.</p>
               <img
                 class="lighthouse-img"
                 src="./assets/lighthouse_desktop.jpg"
@@ -138,6 +129,11 @@
                 height="142"
               />
             </div>
+          </div>
+        </main>
+        <!-- ARROWS -->
+        <div class="projects-preview">
+          <div class="preview">
             <p>Check lightmode for some animations!</p>
             <div class="arrows">
               <div class="arrow">
@@ -156,8 +152,8 @@
       <!-- PROJECTS -->
 
       <section id="projects">
-        <h2 class="h2 section-title">Projects</h2>
-        <h4 class="h4 projects-type projects-type-1">Commercial</h4>
+        <h2 class="section-title">Projects</h2>
+        <h3 class="commercial">Commercial</h3>
         <!-- ALPINE FESTIVAL -->
         <div class="project">
           <div class="project-info">
@@ -182,10 +178,10 @@
             <p class="project-text">
               Application is aimed to be used in 2024 edition.
             </p>
-            <h6 class="h6 programs">
+            <p class="programs">
               NEXT.JS | TYPESCRIPT | MATERIAL-UI | FORMIK | YUP | DAYJS |
               REACT-TEL-INPUT-2 REDUX | FIREBASE | CLOUD FUNCTIONS | i18NEXT
-            </h6>
+            </p>
           </div>
           <div class="monitor">
             <div class="monitor-frame">
@@ -203,9 +199,7 @@
                     loop
                     aria-label="short showcase of the application features"
                   ></video>
-                  <div class="video-hover">
-                    <h2>See Website</h2>
-                  </div>
+                  <div class="video-hover"><p class="text-1">Visit</p></div>
                 </a>
               </div>
             </div>
@@ -217,7 +211,7 @@
         </div>
         <div class="commercial-project-views">
           <div class="commercial-project-view">
-            <p class="commercial-project-view-heading">main page</p>
+            <h5>main page</h5>
             <p class="commercial-project-view-text">
               includes form for guests to register. Forms are managed with
               formik and yup(frontend validation). Backend validation stored in
@@ -236,7 +230,7 @@
             />
           </div>
           <div class="commercial-project-view">
-            <p class="commercial-project-view-heading">user/organizer panel</p>
+            <h5>user/organizer panel</h5>
             <p class="commercial-project-view-text">
               can be accessed by authenticated users. AUTH is managed with just
               email and password for now, because adding other forms of auth may
@@ -255,7 +249,7 @@
             />
           </div>
           <div class="commercial-project-view">
-            <p class="commercial-project-view-heading">admin actions</p>
+            <h5>admin actions</h5>
             <p class="commercial-project-view-text">
               are to be executed by authorized users. Node.js enviornment was
               needed to give users admin custom claims which allow them to
@@ -273,8 +267,8 @@
             />
           </div>
         </div>
-        <h4 class="h4 projects-type">Personal</h4>
-        <!-- PROJECT 3 -->
+        <h3 class="personal">Personal</h3>
+        <!-- ALPOST -->
         <div class="project">
           <div class="project-info">
             <div class="project-info-upper-section">
@@ -302,17 +296,17 @@
                 >
               </div>
             </div>
-            <p class="h6 error">DEPLOYMENT CURRENTLY IN MIGRATION!</p>
+            <p class="p error">DEPLOYMENT CURRENTLY IN MIGRATION!</p>
             <p class="project-text">
               Fullstack Forum App with features such as AUTH managed with
               cookies in express-sessions, caching in urql, SSR plus CSR usage,
               password reset and cursor based pagination. Backend uses GRAPHQL
               API.
             </p>
-            <h6 class="h6 programs">
+            <p class="programs">
               REACT | NODE.JS | POSTGRESQL | TYPESCRIPT | GRAPHQL | URQL |
               TYPEORM | REDIS | NEXTJS | CHAKRA UI
-            </h6>
+            </p>
           </div>
           <div class="monitor">
             <div class="monitor-frame">
@@ -330,9 +324,7 @@
                     loop
                     aria-label="short showcase of the application features"
                   ></video>
-                  <div class="video-hover">
-                    <h2>See Website</h2>
-                  </div>
+                  <div class="video-hover"><p class="text-1">Visit</p></div>
                 </a>
               </div>
             </div>
@@ -342,7 +334,7 @@
             </div>
           </div>
         </div>
-        <!-- PROJECT 2 -->
+        <!-- MUSICALIA -->
         <div class="project">
           <div class="project-info">
             <div class="project-info-upper-section">
@@ -379,9 +371,9 @@
               for this solution can be found under '0.MPA_with_EJS' folder in
               root directory(Musicalia_BE repository).
             </p>
-            <h6 class="h6 programs">
+            <p class="programs">
               NODE.JS | EXPRESS | MONGODB/MONGOOSE | REACT | SCSS
-            </h6>
+            </p>
           </div>
           <div class="monitor">
             <div class="monitor-frame">
@@ -399,9 +391,7 @@
                     loop
                     aria-label="short showcase of the application features"
                   ></video>
-                  <div class="video-hover">
-                    <h2>See Website</h2>
-                  </div>
+                  <div class="video-hover"><p class="text-1">Visit</p></div>
                 </a>
               </div>
             </div>
@@ -411,7 +401,7 @@
             </div>
           </div>
         </div>
-        <!-- PROJECT 1 -->
+        <!-- Y-LAP -->
         <div class="project">
           <div class="project-info">
             <div class="project-info-upper-section">
@@ -432,7 +422,7 @@
               basic searchbar, on-click popup, on-click ad's slider, timer.
               Specific site navigation can be found in github README.
             </p>
-            <h6 class="h6 programs">HTML | SCSS | JAVASCRIPT</h6>
+            <p class="programs">HTML | SCSS | JAVASCRIPT</p>
           </div>
           <div class="monitor">
             <div class="monitor-frame">
@@ -450,9 +440,7 @@
                     loop
                     aria-label="short showcase of the application features"
                   ></video>
-                  <div class="video-hover">
-                    <h2>See Website</h2>
-                  </div>
+                  <div class="video-hover"><p class="text-1">Visit</p></div>
                 </a>
               </div>
             </div>
@@ -464,125 +452,12 @@
         </div>
       </section>
 
-      <!-- INTERVIEW TASKS -->
-
-      <!-- <section id="interview-tasks">
-        <h4 class="h4">Here are some interview tasks i've done.</h4>
-        <div class="tasks-container"> -->
-      <!-- TASK 1 -->
-      <!-- <div class="task">
-            <div class="task-header">
-              <h4 class="h4 task-h">Task 1 Features</h4>
-              <a
-                class="projects-git-link"
-                href="https://github.com/pjoterini/gnNews"
-                target="_blank"
-                aria-label="g n news task github repository"
-                ><i class="fa-brands fa-github fa-2x"></i
-              ></a>
-            </div>
-            <div class="task-features">
-              <h6 class="h6 features">> REACT, TypeScript</h6>
-              <h6 class="h6 features">> News API, i18next</h6>
-              <h6 class="h6 features">> Redux ToolKit</h6>
-              <h6 class="h6 features">> react-router, react-testing-lin</h6>
-              <h6 class="h6 features">> i18next, translator lib.</h6>
-            </div>
-            <a
-              href="https://github.com/pjoterini/gnNews"
-              target="_blank"
-              class="task-img-link"
-              aria-label="g n news task github repository"
-            >
-              <img
-                class="task-img"
-                src="./assets/task3.webp"
-                alt="task interface screenshot"
-                width="360"
-                height="342"
-              />
-            </a>
-          </div> -->
-      <!-- TASK 2 -->
-      <!-- <div class="task">
-            <div class="task-header">
-              <h4 class="h4 task-h">Task 2 Features</h4>
-              <a
-                class="projects-git-link"
-                href="https://github.com/pjoterini/nerdboard_task"
-                target="_blank"
-                aria-label="second task github repository"
-                ><i class="fa-brands fa-github fa-2x"></i
-              ></a>
-            </div>
-            <div class="task-features">
-              <h6 class="h6 features">> NEXT</h6>
-              <h6 class="h6 features">> TypeScript</h6>
-              <h6 class="h6 features">> Multiple useRef hook management</h6>
-              <h6 class="h6 features">> html-react-parser library</h6>
-            </div>
-            <a
-              href="https://github.com/pjoterini/nerdboard_task"
-              target="_blank"
-              class="task-img-link"
-              aria-label="second task github repository"
-            >
-              <img
-                class="task-img"
-                src="./assets/task2.webp"
-                alt="task interface screenshot"
-                width="360"
-                height="342"
-              />
-            </a>
-          </div> -->
-      <!-- TASK 3 -->
-      <!-- <div class="task">
-            <div class="task-header">
-              <h4 class="h4 task-h">Task 3 Features</h4>
-              <a
-                class="projects-git-link"
-                href="https://github.com/pjoterini/muscode_task"
-                target="_blank"
-                aria-label="third task github repository"
-                ><i class="fa-brands fa-github fa-2x"></i
-              ></a>
-            </div>
-            <div class="task-features">
-              <h6 class="h6 features">> VUE</h6>
-              <h6 class="h6 features">> RWD</h6>
-              <h6 class="h6 features">> Custom Modal</h6>
-              <h6 class="h6 features">> Mock products state management</h6>
-            </div>
-            <a
-              href="https://muscode-task.vercel.app/"
-              target="_blank"
-              class="task-img-link"
-              aria-label="third task github repository"
-            >
-              <img
-                class="task-img"
-                src="./assets/task1.webp"
-                alt="task interface screenshot"
-                width="360"
-                height="342"
-              />
-            </a>
-          </div>
-        </div>
-      </section> -->
-
       <!-- BLOG -->
 
       <section id="blog">
-        <h2 class="h2 section-title">Blog</h2>
-        <div class="project">
+        <h2 class="section-title">Blog</h2>
+        <div class="project blog">
           <div class="project-info">
-            <div class="project-info-upper-section">
-              <a href="https://y-lap.vercel.app/">
-                <h4 class="h4">My Blog</h4>
-              </a>
-            </div>
             <p class="project-text">
               This website was made mainly for getting to know WordPress, but
               ended being a writing/english practice too.
@@ -590,13 +465,13 @@
             <p class="project-text">
               "Outlook signature" post is actually very relevant.
             </p>
-            <h6 class="h6 programs">WORDPRESS | HOSTINGER</h6>
+            <p class="programs">WORDPRESS | HOSTINGER</p>
           </div>
           <div class="monitor">
             <div class="monitor-frame">
               <div class="monitor-screen">
                 <a
-                  href="https://piotrgorski.blog"
+                  href="https://blog.piotrgorski.com"
                   target="_blank"
                   class="project-video-link"
                 >
@@ -607,9 +482,7 @@
                     width="1200"
                     height="777"
                   />
-                  <div class="video-hover">
-                    <h2>See Blog</h2>
-                  </div>
+                  <div class="video-hover"><p class="text-1">Visit</p></div>
                 </a>
               </div>
             </div>
@@ -624,27 +497,25 @@
       <!-- ARCH PORTFOLIO -->
 
       <section id="arch-portfolio">
-        <div class="condition">
-          <h4 class="h4 if">if</h4>
-          <h4 class="h4">
-            <strong class="orange">(</strong>
-            You're curious about my design skills
-            <strong class="orange">)</strong>
-            <strong class="accent">{</strong>
-          </h4>
+        <div class="statement-container">
+          <span class="if">if</span>
+          <div class="then">
+            <span class="parentheses">(</span>
+            <span>You're curious about my design skills</span>
+            <span class="parentheses">)</span>
+            <span class="curly">{</span>
+            <div>then definitely check my</div>
+            <h2 class="section-title">Architecture Portfolio</h2>
+            <div class="curly">}</div>
+          </div>
         </div>
-        <div class="then">
-          <h4 class="h4">then definitely check my</h4>
-          <h2 class="h2 section-title">Architecture Portfolio</h2>
-          <h4 class="h4"><strong class="accent">}</strong></h4>
-        </div>
-        <a
-          class="arch-images-container"
-          href="./assets/Portfolio_ARCH.pdf"
-          target="_blank"
-          aria-label="open portfolio in pdf format"
-        >
-          <div class="arch-images">
+        <div class="arch-images-container">
+          <a
+            class="arch-images"
+            href="./assets/Portfolio_ARCH.pdf"
+            target="_blank"
+            aria-label="open portfolio in pdf format"
+          >
             <div class="arch-img arch-img1"></div>
             <div class="arch-img arch-img2"></div>
             <div class="arch-img arch-img3"></div>
@@ -653,15 +524,15 @@
             <div class="arch-img arch-img6"></div>
             <div class="arch-img arch-img7"></div>
             <div class="arch-img arch-img8"></div>
-          </div>
-          <button class="h3 arch-images-btn">portfolio</button>
-        </a>
+          </a>
+          <div class="btn arch-images-btn hide">Portfolio</div>
+        </div>
       </section>
 
       <!-- CV -->
 
       <section id="cv">
-        <h2 class="h2 section-title">CV</h2>
+        <h2 class="section-title">CV</h2>
         <a
           href="./assets/CV_Piotr_Górski_pl_noTel.pdf"
           target="_blank"
@@ -683,7 +554,7 @@
       <section id="about-me">
         <div class="about-me-content">
           <div class="left-col">
-            <h2 class="h2 section-title">About Me</h2>
+            <h2 class="section-title">About Me</h2>
             <p class="about-me-text">
               My name is Piotr Górski, graduated architect currently working on
               everything around web dev.
@@ -702,7 +573,7 @@
       <!-- CONTACT -->
 
       <section id="contact">
-        <h2 class="h2 section-title">Contact</h2>
+        <h2 class="section-title">Contact</h2>
         <form
           id="form"
           class="form"
@@ -761,8 +632,8 @@
             aria-label="my linkedin profile"
             ><i class="fa-brands fa-linkedin fa-2x"></i
           ></a>
-          <p>&copy; 2024</p>
-          <p class="p2">Piotr Górski</p>
+          <p class="copyright">&copy; 2024</p>
+          <p class="name">Piotr Górski</p>
         </div>
       </section>
     </div>

@@ -1,17 +1,8 @@
-.projects-preview {
-  margin-top: 1rem;
-  margin-bottom: 7rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@use '../variables' as *;
 
-.lighthouse-img {
-  width: 88%;
-  height: auto;
-  margin-bottom: 2rem;
-  border-radius: 1rem;
+.projects-preview {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .preview {
@@ -36,7 +27,7 @@
 
 .left {
   position: absolute;
-  top: 50px;
+  top: 30px;
   left: 4%;
   width: 150px;
   height: 2px;
@@ -46,7 +37,7 @@
 
 .right {
   position: absolute;
-  top: 50px;
+  top: 30px;
   right: 3%;
   width: 150px;
   height: 2px;

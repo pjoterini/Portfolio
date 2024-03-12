@@ -1,0 +1,44 @@
+@use '../variables' as *;
+
+.nav-links {
+  display: flex;
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $transition1;
+
+    a {
+      padding: 0 2rem;
+      transition: $transition1;
+    }
+
+    a:hover {
+      color: $accent-color;
+    }
+  }
+
+  li:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* 1440px ////////////////////// */
+@media (max-width: 1440px) {
+  .nav-links {
+    li {
+      a {
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+
+/* 1024px ////////////////////// */
+
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+}

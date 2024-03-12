@@ -6,14 +6,14 @@ import Portfolio_ARCH from './assets/Portfolio_ARCH.pdf'
 
 import spaceBackground from './javascript/spaceBackground'
 import colorTheme from './javascript/colorTheme'
-import navbar from './javascript/navbar'
+import burgerMenu from './javascript/burgerMenu'
 import arrows from './javascript/arrows'
 import archImages from './javascript/archImages'
 import intersectionObservers from './javascript/intersectionObservers'
 
 spaceBackground()
 colorTheme()
-navbar()
+burgerMenu()
 arrows()
 archImages()
 intersectionObservers()

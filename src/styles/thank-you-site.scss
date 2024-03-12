@@ -1,0 +1,17 @@
+@use './variables' as *;
+
+.thankyou-container {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: white;
+}
+
+.thankyou-container .h4 {
+  color: $accent-color;
+}

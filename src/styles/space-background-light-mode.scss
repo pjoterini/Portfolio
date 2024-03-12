@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 .sun {
   background: linear-gradient(45deg, rgb(241, 222, 115), rgb(230, 139, 66));
   border-right: 0px;

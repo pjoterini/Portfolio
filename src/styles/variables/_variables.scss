@@ -6,13 +6,13 @@
   --white: #fff;
   --gray: #c5c5c5;
   --black: #000000;
-  --error-color: #f1316e;
+  --error: #f1316e;
+  --primary-transparent: rgba(34, 20, 57, 0.849);
+
   --transition1: 300ms all ease-in-out;
   --transition2: 600ms all ease-in-out;
-
-  --nav-bg: rgba(34, 20, 57, 0.849);
-  --white: rgba(255, 255, 255, 0.849);
 }
+
 $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
 $accent-color: var(--accent-color);
@@ -20,17 +20,19 @@ $accent-color-transparent: var(--accent-color-transparent);
 $white: var(--white);
 $gray: var(--gray);
 $black: var(--black);
-$error-color: var(--error-color);
+$error: var(--error);
+$primary-transparent: var(--primary-transparent);
+
 $transition1: var(--transition1);
 $transition2: var(--transition2);
-
-$nav-bg: var(--nav-bg);
 
 h1,
 h2,
 h3,
 h4,
-h6 {
+h5,
+p,
+span {
   color: $white;
   position: relative;
   z-index: 2;
@@ -38,8 +40,8 @@ h6 {
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-weight: 900;
   font-size: 4.5rem;
+  font-weight: 900;
 }
 
 h2 {
@@ -48,44 +50,46 @@ h2 {
   transition-property: opacity transform;
   transition-timing-function: ease-in;
   font-family: 'Playfair Display', serif;
-  font-weight: 900;
   font-size: 3.2rem;
+  font-weight: 900;
 }
 .section-title-show {
   opacity: 1;
 }
 
 h3 {
-  font-weight: 300;
-  font-size: 1.8rem;
-}
-
-h4 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-h6 {
-  font-size: 18px;
-  text-transform: uppercase;
+  font-size: 2.2rem;
   font-weight: 500;
 }
 
+h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $accent-color;
+}
+
 p {
-  position: relative;
   line-height: 1.8rem;
-  font-size: 18px;
   color: $gray;
-  font-family: 'Montserrat', sans-serif;
-  z-index: 2;
 }
 
 a {
+  color: $white;
+  font-weight: 500;
   text-decoration: none;
 }
 
+.text-1 {
+  font-size: 2.2rem;
+}
+
 .error {
-  color: $error-color;
+  color: $error;
 }
 
 /* 1024px /////////////////////////// */
@@ -105,5 +109,11 @@ a {
 
   p {
     line-height: 1.6;
+  }
+
+  .text-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
   }
 }
