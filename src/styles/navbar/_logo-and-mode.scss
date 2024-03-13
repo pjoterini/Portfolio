@@ -35,9 +35,9 @@
   }
 
   .color-mode li.active {
-    -webkit-box-shadow: inset 0px 0px 0px 2px $accent-color;
-    -moz-box-shadow: inset 0px 0px 0px 2px $accent-color;
-    box-shadow: inset 0px 0px 0px 2px $accent-color;
+    -webkit-box-shadow: inset 0px 0px 0px 2px $accent;
+    -moz-box-shadow: inset 0px 0px 0px 2px $accent;
+    box-shadow: inset 0px 0px 0px 2px $accent;
   }
 
   .color-mode-ul {

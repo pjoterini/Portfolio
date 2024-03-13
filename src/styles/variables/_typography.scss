@@ -1,0 +1,87 @@
+@use './colors' as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+  color: $white;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+h2 {
+  opacity: 0;
+  transition-duration: 2000ms;
+  transition-property: opacity transform;
+  transition-timing-function: ease-in;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: $accent;
+}
+
+p {
+  line-height: 1.8rem;
+  color: $gray;
+}
+
+a {
+  color: $white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.text-1 {
+  font-size: 2.2rem;
+}
+
+.error {
+  color: $error;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+}
+
+@media (max-width: 720px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .text-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+}

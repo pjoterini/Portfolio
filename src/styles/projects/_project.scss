@@ -1,0 +1,82 @@
+@use '../variables' as *;
+
+.project {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  padding-top: 4rem;
+
+  .project-info {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .project-info h4 {
+    cursor: pointer;
+    color: $white;
+  }
+
+  .project-info h4:hover {
+    color: $accent;
+  }
+
+  .project-info-upper-section {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .fullstack-git-links {
+    display: flex;
+    margin-left: 1rem;
+  }
+
+  .projects-git-link {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    color: $white;
+    transform: scale(0.8);
+    text-align: center;
+  }
+
+  .projects-git-link:hover {
+    color: $accent;
+  }
+
+  .project-text {
+    color: $gray;
+    margin-bottom: 2rem;
+  }
+
+  .programs {
+    margin-top: 2rem;
+    margin-top: auto;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    color: $secondary;
+  }
+}
+
+@media (max-width: 1440px) {
+  .project {
+    grid-template-columns: 1fr;
+
+    .project-info {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  #projects {
+    padding-top: 6rem;
+    width: 100%;
+  }
+
+  .project {
+    padding-top: 4rem;
+  }
+}

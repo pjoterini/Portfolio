@@ -1,0 +1,111 @@
+@use '../variables' as *;
+
+.monitor {
+  width: calc(100% - 5rem);
+  height: 25rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.monitor-frame {
+  width: 100%;
+  height: 90%;
+  padding: 0.5rem;
+  border: 2px solid $gray;
+}
+
+.monitor-screen {
+  width: 100%;
+  height: 100%;
+  border: 1px solid $white;
+  box-shadow: 0 0 1px $white, 0 0 2px $white, 0 0 5px $white, 0 0 10px $white;
+}
+
+.project-video-link {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+
+  transition: 1000ms ease-in-out;
+  transition-property: opacity;
+  z-index: 2;
+}
+
+.project-link-video-show {
+  opacity: 1;
+}
+
+.project-video {
+  height: 100%;
+  width: 100%;
+}
+
+.video-hover {
+  position: absolute;
+  background-color: $primary-transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  z-index: 3;
+
+  p {
+    color: $white;
+    text-align: center;
+  }
+}
+
+.video-hover:hover {
+  opacity: 1;
+}
+
+.monitor-stand {
+  height: 10%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.monitor-stand-vertical {
+  height: 80%;
+  width: 15%;
+  border-left: 2px solid $gray;
+  border-right: 2px solid $gray;
+}
+.monitor-stand-horizontal {
+  height: 20%;
+  width: 100%;
+  border: 2px solid $gray;
+}
+
+@media (max-width: 1440px) {
+  .monitor {
+    width: 75%;
+    margin: 1.5rem auto 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .monitor {
+    width: 85%;
+  }
+}
+
+@media (max-width: 720px) {
+  .monitor {
+    max-width: 500px;
+    width: 100%;
+    height: 20rem;
+  }
+}

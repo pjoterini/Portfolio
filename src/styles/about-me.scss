@@ -26,10 +26,8 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  border-bottom: 1px solid $secondary-color;
+  border-bottom: 1px solid $secondary;
 }
-
-/* 1024px /////////////////////////// */
 
 @media (max-width: 1024px) {
   .about-me-content {
@@ -46,8 +44,6 @@
     background-position: right;
   }
 }
-
-/* 720px ////////////////////// */
 
 @media (max-width: 720px) {
   .my-picture {

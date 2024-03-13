@@ -1,0 +1,21 @@
+:root {
+  --primary: #211337;
+  --secondary: #ffd698;
+  --accent: #44cead;
+  --white: #fff;
+  --gray: #c5c5c5;
+  --black: #000000;
+  --error: #f1316e;
+  --accent-transparent: #44ceae9f;
+  --primary-transparent: rgba(34, 20, 57, 0.849);
+}
+
+$primary: var(--primary);
+$secondary: var(--secondary);
+$accent: var(--accent);
+$white: var(--white);
+$gray: var(--gray);
+$black: var(--black);
+$error: var(--error);
+$accent-transparent: var(--accent-transparent);
+$primary-transparent: var(--primary-transparent);

@@ -22,10 +22,12 @@ const intersectionObservers = () => {
       threshold: 0.6
     }
   )
-  // SECTION TITLES
+
   projectVideoLinks.forEach((projectVideo) => {
     projectVideoLinkObserver.observe(projectVideo)
   })
+
+  // SECTION TITLES
 
   const sectionTitleObserver = new IntersectionObserver(
     (entries) => {
@@ -40,6 +42,7 @@ const intersectionObservers = () => {
       threshold: 1
     }
   )
+
   sectionTitles.forEach((sectionTitle) => {
     sectionTitleObserver.observe(sectionTitle)
   })

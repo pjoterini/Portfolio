@@ -1,0 +1,26 @@
+@use './colors' as *;
+@use './animation' as *;
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: $white;
+  text-align: center;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 30px;
+  text-decoration: none;
+  -webkit-box-shadow: inset 0px 0px 0px 2px $accent;
+  -moz-box-shadow: inset 0px 0px 0px 2px $accent;
+  box-shadow: inset 0px 0px 0px 2px $accent;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: $primary;
+  background-color: $accent;
+  box-shadow: 0 0 5px $accent-transparent, 0 0 30px $accent-transparent,
+    0 0 70px $accent-transparent, 0 0 150px $accent-transparent;
+
+  transition: $transition1;
+}

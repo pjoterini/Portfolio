@@ -1,125 +1,4 @@
-@use './variables' as *;
-
-.stars {
-  width: 100vw;
-}
-
-.star {
-  position: absolute;
-  border: 2px solid $white;
-  border-radius: 50%;
-  box-shadow: none;
-  opacity: 0.15;
-
-  transition-property: opacity, box-shadow, top, transform;
-  transition-duration: 2000ms;
-  transition-timing-function: ease-in-out;
-}
-
-.star1 {
-  left: 10vw;
-  top: 40vh;
-}
-.star2 {
-  left: 8vw;
-  top: 15vh;
-}
-.star3 {
-  left: 25vw;
-  top: 10vh;
-}
-.star4 {
-  left: 22vw;
-  top: 28vh;
-}
-.star5 {
-  left: 40vw;
-  top: 6vh;
-}
-.star6 {
-  left: 47vw;
-  top: 27vh;
-}
-.star7 {
-  left: 60vw;
-  top: 12vh;
-}
-.star8 {
-  left: 67vw;
-  top: 30vh;
-}
-.star9 {
-  left: 85vw;
-  top: 10vh;
-}
-.star10 {
-  left: 5vw;
-  top: 60vh;
-}
-.star11 {
-  left: 18vw;
-  top: 70vh;
-}
-.star12 {
-  left: 48vw;
-  top: 51vh;
-}
-.star13 {
-  left: 40vw;
-  top: 76vh;
-}
-.star14 {
-  left: 90vw;
-  top: 37vh;
-}
-.star15 {
-  left: 84vw;
-  top: 65vh;
-}
-.star16 {
-  left: 7vw;
-  top: 86vh;
-}
-.star17 {
-  left: 27vw;
-  top: 94vh;
-}
-.star18 {
-  left: 90vw;
-  top: 89vh;
-}
-.star19 {
-  left: 57vw;
-  top: 86vh;
-}
-.star20 {
-  left: 73vw;
-  top: 82vh;
-}
-
-.l {
-  height: 25px;
-  width: 25px;
-}
-.m {
-  height: 15px;
-  width: 15px;
-}
-.s {
-  height: 8px;
-  width: 8px;
-}
-
-.spark {
-  -webkit-box-shadow: 10px 17px 70px 37px $accent-color;
-  -moz-box-shadow: 10px 17px 70px 37px $accent-color;
-  box-shadow: 0px 0px 50px 15px $accent-color;
-  opacity: 0.4;
-
-  transition-property: opacity, box-shadow, transform, top;
-  transition-duration: 2000ms;
-  transition-timing-function: ease-in-out;
-}
+@use '../variables' as *;
 
 .moon {
   position: relative;
@@ -137,18 +16,14 @@
 }
 
 .spark-moon {
-  -webkit-box-shadow: 10px 17px 70px 37px $accent-color;
-  -moz-box-shadow: 10px 17px 70px 37px $accent-color;
-  box-shadow: -5px -3px 50px 1px $accent-color;
+  -webkit-box-shadow: 10px 17px 70px 37px $accent;
+  -moz-box-shadow: 10px 17px 70px 37px $accent;
+  box-shadow: -5px -3px 50px 1px $accent;
   opacity: 1;
 
   transition-property: opacity, box-shadow;
   transition-duration: 3500ms;
   transition-timing-function: ease-in-out;
-}
-
-.moon-hole {
-  display: block;
 }
 
 .moon-hole-1 {
@@ -225,21 +100,16 @@
   transform: rotate(190deg);
 }
 
-@media (max-width: 1440px) {
-  .star {
-    transform: scale(0.7);
-  }
+.sun {
+  background: linear-gradient(45deg, rgb(241, 222, 115), rgb(230, 139, 66));
+  border-right: 0px;
 }
-
-/* 1024px /////////////////////////// */
 
 @media (max-width: 1024px) {
   .moon {
     transform: scale(0.7) rotate(30deg);
   }
 }
-
-/* 720px /////////////////////////// */
 
 @media (max-width: 720px) {
   .moon {

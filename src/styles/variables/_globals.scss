@@ -1,0 +1,71 @@
+@use './colors' as *;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 18px;
+}
+
+body {
+  position: relative;
+  background-color: $primary;
+  z-index: -3;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}
+body::-webkit-scrollbar-track {
+  background: $primary;
+}
+body::-webkit-scrollbar-thumb {
+  background: $gray;
+}
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: $primary;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding-top: 6rem;
+  width: 100%;
+}
+
+.section-title-show {
+  opacity: 1;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 90%;
+  }
+}

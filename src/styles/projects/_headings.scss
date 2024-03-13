@@ -1,0 +1,19 @@
+@use '../variables' as *;
+
+#projects {
+  h3 {
+    text-align: center;
+  }
+
+  .commercial {
+    padding-top: 2rem;
+    margin-bottom: -1rem;
+    border-bottom: 1px solid $white;
+  }
+
+  .personal {
+    padding-top: 4rem;
+    margin-bottom: -1rem;
+    border-bottom: 1px solid $white;
+  }
+}
