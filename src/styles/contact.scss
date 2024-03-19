@@ -1,12 +1,9 @@
 @use './variables' as *;
 
-#contact {
-  width: 100%;
-}
-
 .form {
   margin-top: 4rem;
-  width: 60%;
+  max-width: 600px;
+  width: 100%;
 }
 
 .inputs {
@@ -43,10 +40,6 @@ textarea {
 
 .form-btn {
   margin-top: 1rem;
-  outline: none;
-  border: none;
-  font-family: inherit;
-  font-size: 18px;
 }
 
 .write-directly {
@@ -54,35 +47,5 @@ textarea {
 
   a {
     color: $white;
-  }
-}
-
-@media (max-width: 1024px) {
-  .form {
-    margin-top: 3rem;
-    width: 100%;
-  }
-
-  .form-btn {
-    margin-top: 1rem;
-    outline: none;
-    border: none;
-    font-family: inherit;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 720px) {
-  .form {
-    margin-top: 3rem;
-    width: 100%;
-  }
-
-  .form-btn {
-    margin-top: 1rem;
-    outline: none;
-    border: none;
-    font-family: inherit;
-    font-size: 18px;
   }
 }

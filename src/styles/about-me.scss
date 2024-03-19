@@ -1,52 +1,45 @@
 @use './variables' as *;
 
-#about-me {
-  width: 100%;
-}
-
-.about-me-content {
+.about-me-container {
   display: grid;
   grid-template-columns: 60% 40%;
-}
-
-.left-col {
-  padding-right: 5rem;
-}
-
-.left-col h2 {
-  margin-bottom: 2rem;
-}
-
-.about-me-btn {
-  margin-top: 2rem;
-}
-
-.my-picture {
-  background-image: url(./assets/my-image.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid $secondary;
-}
-
-@media (max-width: 1024px) {
-  .about-me-content {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 
   .left-col {
-    padding-right: 0;
+    padding-right: 5rem;
+
+    .about-me-text {
+      margin: 2rem 0rem;
+    }
   }
 
   .my-picture {
-    height: 250px;
-    background-position: right;
+    background-image: url(./assets/my-image.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid $secondary;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-me-container {
+    grid-template-columns: 1fr;
+
+    .left-col {
+      padding-right: 0;
+    }
+
+    .my-picture {
+      height: 250px;
+      background-position: right;
+    }
   }
 }
 
 @media (max-width: 720px) {
-  .my-picture {
-    height: 150px;
+  .about-me-container {
+    .my-picture {
+      height: 180px;
+    }
   }
 }

@@ -1,7 +1,15 @@
 @use './colors' as *;
 @use './animation' as *;
 
-.btn {
+button {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.btn,
+button {
   display: inline-block;
   padding: 1rem 2rem;
   color: $white;

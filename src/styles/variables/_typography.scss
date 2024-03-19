@@ -1,5 +1,16 @@
 @use './colors' as *;
 
+$font-1: 'Montserrat', sans-serif;
+$font-2: 'Righteous', serif;
+
+:root {
+  font-size: 18px;
+}
+
+body {
+  font-family: $font-1;
+}
+
 h1,
 h2,
 h3,
@@ -13,30 +24,30 @@ span {
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: $font-2;
   font-size: 4.5rem;
   font-weight: 900;
 }
 
 h2 {
+  font-family: $font-2;
+  font-size: 3rem;
+  font-weight: 900;
+
   opacity: 0;
   transition-duration: 2000ms;
   transition-property: opacity transform;
   transition-timing-function: ease-in;
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  font-weight: 900;
 }
 
 h3 {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 h4 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 h5 {

@@ -2,7 +2,6 @@
 
 #footer {
   padding-bottom: 2rem;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,17 +34,11 @@
 }
 
 @media (max-width: 1024px) {
-  .copytight {
+  .copyright {
     margin-left: 0rem;
   }
 
   .name {
     margin-left: 1rem;
-  }
-}
-
-@media (max-width: 720px) {
-  #footer {
-    padding-bottom: 2rem;
   }
 }

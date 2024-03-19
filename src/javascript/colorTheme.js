@@ -73,7 +73,7 @@ const colorTheme = () => {
       root.style.setProperty('--accent', '#ffcc59')
       root.style.setProperty('--white', '#211337')
       root.style.setProperty('--black', '#211337')
-      root.style.setProperty('--gray', '#535353')
+      root.style.setProperty('--gray', '#3f3f3f')
       root.style.setProperty('--accent-transparent', '#ffcc59')
       root.style.setProperty(
         '--primary-transparent',
